@@ -23,5 +23,5 @@
     </dl>
 </cfoutput>
 
-<cfdump var="#request#">
+<cfdump var="#request.exception#">
 
