@@ -1,0 +1,178 @@
+body {
+    font-family: Linux Libertine, serif;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+}
+
+section {
+    padding-bottom: 0.5ex;
+}
+
+h1, h2, h3, h4, h5, h6, h5 {
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+#my-contact-info {
+    margin-top: 20px;
+}
+
+#portrait {
+    float: right;
+    width: 2in;
+    height: auto;
+}
+
+.jumbotron {
+    background-color: hsl(240, 40%, 90%);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+
+.jumbotron h1 small {
+    color: rgba(0, 0, 0, 0.40);
+}
+
+.jumbotron .container::after {
+    clear: none;
+}
+
+.striped {
+    -webkit-background-size: 4ex 4ex;
+    -moz-background-size: 4ex 4ex;
+    background-size: 4ex 4ex;
+
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+        color-stop(.155, rgba(255, 255, 255, .15)), color-stop(.155, transparent),
+        color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+        color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+        to(transparent));
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+        transparent 75%, transparent);
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+        transparent 75%, transparent);
+    background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+        transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+        transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+        transparent 75%, transparent);
+}
+
+ul.fa-ul li a .fa-li {
+    color: black;
+}
+
+ul.section-list > li,
+ol.section-list > li {
+    /* page-break-inside: avoid; */
+}
+
+ul.section-list > li + li,
+ol.section-list > li + li {
+    margin-top: 3ex;
+}
+
+ul.section-list h5,
+ol.section-list h5 {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 1ex;
+}
+
+ul.duties-list, ol.duties-list {
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+ul.duties-list > li + li,
+ol.duties-list > li + li {
+    margin-top: 1ex;
+}
+
+/* For small devices and up. */
+@media(min-width:768px) {
+    dl.skills-list dt {
+        width: 120px;
+    }
+
+    dl.skills-list dd {
+        margin-left: 135px;
+    }
+}
+
+dl.skills-list dt:not(:first-of-type) {
+    margin-top: 0.75ex;
+}
+
+dl.skills-list dd:not(:first-of-type) {
+    margin-top: 0.75ex;
+}
+
+.section-link {
+    display: none;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+h2:hover .section-link {
+    display: inline;
+}
+
+.title {
+    font-weight: bold;
+    margin-right: 1ex;
+}
+
+.date {
+    font-style: italic;
+}
+
+.contact-info {
+    padding-left: 20px;
+    margin-top: .75ex;
+}
+
+.contact-info a .fa {
+    color: black;
+    margin-right: .75ex;
+}
+
+.toggle-hidden-hidden > * {
+    display: none;
+}
+
+.toggle-hidden-hidden > h5,
+.toggle-hidden-hidden > *.title,
+.toggle-hidden-hidden > *.date {
+    display: block;
+    color: rgba(0, 0, 0, 0.40);
+}
+
+.education-bar .timeline-event {
+    color: white;
+    background: #3c763d;
+    border-color: #1c561d;
+}
+
+.education-bar .timeline-event:hover {
+    color: #1c561d;
+    background: #dff0d8;
+    text-decoration: none;
+}
+
+.career-bar .timeline-event {
+    color: white;
+    background: #428bca;
+    border-color: #31708f;
+}
+
+.career-bar .timeline-event:hover {
+    color: #31708f;
+    background: #d9edf7;
+    text-decoration: none;
+}

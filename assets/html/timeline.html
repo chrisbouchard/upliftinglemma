@@ -1,0 +1,18 @@
+<div class="timeline-base">
+    <div ng-repeat="bar in barList" ng-class="barClass(bar)">
+        <a ng-repeat="event in bar.eventList" class="timeline-event"
+                ng-href="{{event.href}}" title="{{event.fullLabel}}"
+                ng-style="eventStyle(event)">
+            {{event.label}}
+        </a>
+    </div>
+    <div class="timeline-axis">
+        <div ng-repeat="label in labelList" class="timeline-label"
+                ng-style="labelStyle(label, $last)">
+            <div class="timeline-tick"></div>
+            <div class="timeline-label-text">{{label}}</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "CC Icons";
+    src: url(../fonts/cc-icons.ttf);
+}
+
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/LinLibertine_R.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/LinLibertine_RB.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/LinLibertine_RI.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/LinLibertine_RBI.woff) format("woff");
+}
+
+.creative-commons {
+    font-family: "CC Icons";
+    font-size: 1em;
+}
+
+/* TeX and LaTeX typesetting based on a blog post by Edward O'Connor.
+ * http://edward.oconnor.cx/2007/08/tex-poshlet
+ */
+
+.latex {
+    letter-spacing: 1px;
+}
+
+.latex sup {
+    position: static;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    vertical-align: 0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
+}
+
+.latex sub {
+    position: static;
+    text-transform: uppercase;
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+    font-size: 1em;
+}
+

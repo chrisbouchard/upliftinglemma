@@ -1,0 +1,52 @@
+.timeline-base {
+}
+
+.timeline-axis {
+    position: relative;
+    border-top: 2px solid black;
+    height: 2em;
+}
+
+.timeline-label {
+    position: absolute;
+    top: 0;
+}
+
+.timeline-tick {
+    height: 5px;
+    width: 100%;
+    border-left: 2px solid black;
+}
+
+.timeline-label:last-child .timeline-tick {
+    border-left: none;
+    border-right: 2px solid black;
+}
+
+.timeline-label + .timeline-label .timeline-label-text {
+    margin-left: -50%;
+}
+
+.timeline-label:last-child .timeline-label-text {
+    margin-left: 0;
+}
+
+.timeline-bar {
+    position: relative;
+    height: 18px;
+    margin: 5px 0;
+}
+
+.timeline-event {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1px 3px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 85%;
+    overflow: hidden;
+    cursor: pointer;
+}
+

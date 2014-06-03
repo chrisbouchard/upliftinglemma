@@ -1,0 +1,22 @@
+/* Bootstrap automatically inserts the URL of a link after the link in
+ * printed media. Good idea in theory, but not always desireable. */
+a[href^="mailto:"]::after,
+a[href^="callto:"]::after {
+    content: "" !important;
+}
+
+/* Skills list is a horizontal list, so on screen we need to add margin above
+ * both the dt's and the dd's. In print, it's stacked vertically, so we only
+ * need a margin above the dt's. */
+dl.skills-list dd {
+    margin-top: 0 !important;
+}
+
+#print-warning {
+    margin-bottom: 1em;
+}
+
+.section-link {
+    display: none;
+}
+
