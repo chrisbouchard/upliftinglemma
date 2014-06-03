@@ -1,12 +1,21 @@
 <!DOCTYPE html>
+
+<cfset local.ngApp = "">
+
+<cfif Len(rc.layout.app)>
+    <cfset local.ngApp = 'ng-app="' & rc.lauout.app & '"'>
+</cfif>
+
 <cfoutput>
-    <html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="#rc.layout.app#">
+    <html xmlns:ng="http://angularjs.org" id="ng-app" #local.ngApp#>
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <title>#rc.layout.title#</title>
+            <cfif Len(rc.layout.title)>
+                <title>#rc.layout.title#</title>
+            </cfif>
 
             <!-- jQuery -->
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

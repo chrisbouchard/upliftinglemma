@@ -2,7 +2,13 @@ component extends="framework.one" output="false" accessors="true" {
 
     property layoutService;
 
+    /* Set up session management. */
+    this.sessionManagement = true;
+    this.name = "UpliftingLemma";
+
+    /* Set up FW/1. */
     variables.framework.usingSubsystems = true;
+    variables.framework.applicationKey = "UpliftingLemma";
 
     variables.framework.environments = {
         dev = {
