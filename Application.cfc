@@ -7,12 +7,17 @@ component extends="framework.one" output="false" accessors="true" {
     this.name = "UpliftingLemma";
 
     /* Set up FW/1. */
-    variables.framework.usingSubsystems = true;
-    variables.framework.applicationKey = "UpliftingLemma";
+    variables.framework = {
+        usingSubsystems = true,
+        applicationKey = "UpliftingLemma",
 
-    variables.framework.environments = {
-        dev = {
-            reloadApplicationOnEveryRequest = true
+        diEngine = "di1",
+        diLocations = "controllers,model",
+
+        environments = {
+            dev = {
+                reloadApplicationOnEveryRequest = true
+            }
         }
     }
 

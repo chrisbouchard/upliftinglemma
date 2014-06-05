@@ -23,5 +23,9 @@
     </dl>
 </cfoutput>
 
+<h2>FW/1 Config</h2>
+<cfdump var="#getConfig()#">
+
+<h2>Exception</h2>
 <cfdump var="#request.exception#">
 
