@@ -68,7 +68,7 @@
 
                             <!-- Google+ -->
                             <li><p><a href="https://plus.google.com/u/1/105233296650473575628">
-                                <span class="fa fa-li fa-google-plus"></span>
+                                <span class="fa fa-li fa-google-plus-square"></span>
                                 chrisbouchard01
                             </a></p></li>
 
