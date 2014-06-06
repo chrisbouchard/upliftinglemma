@@ -5,6 +5,7 @@ component output="false" accessors="true" {
 
     function default(rc) output="false" {
         rc.message = testService.getValue();
+        rc.framework = framework;
     }
 
 }

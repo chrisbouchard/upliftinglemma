@@ -2,3 +2,5 @@
 
 <p><cfoutput>#getRCValue("message")#</cfoutput></p>
 
+<cfdump var="#getRCValue("framework")#">
+
