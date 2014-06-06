@@ -69,7 +69,7 @@
                                 <a href="#buildURL("")#" id="upliftinglemma-brand"
                                         class="navbar-brand pull-left">
                                     <span class="fa fa-certificate"></span>
-                                    UpliftingLemma
+                                    Uplifting Lemma
                                 </a>
                             </div>
 
