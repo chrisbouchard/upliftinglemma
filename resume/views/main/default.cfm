@@ -4,11 +4,6 @@
 <cfset local.layoutConfig.app = "resumeApp">
 
 <cfsavecontent variable="local.layoutConfig.head">
-    <!-- Local Style -->
-    <link rel="stylesheet" href="/assets/css/theme.css">
-    <link rel="stylesheet" href="/assets/css/typography.css">
-    <link rel="stylesheet" href="/assets/css/print.css" media="print">
-
     <!-- Resume App -->
     <link rel="stylesheet" href="/assets/css/timeline.css">
     <script src="/assets/js/resume-app.js"></script>
