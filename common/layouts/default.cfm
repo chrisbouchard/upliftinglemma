@@ -50,7 +50,7 @@
             <script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
             <!-- Local -->
-            <link rel="stylesheet" href="/assets/css/print.css" medium="print">
+            <link rel="stylesheet" href="/assets/css/print.css" media="print">
             <link rel="stylesheet" href="/assets/css/structure.css">
             <link rel="stylesheet" href="/assets/css/theme.css">
             <link rel="stylesheet" href="/assets/css/typography.css">
