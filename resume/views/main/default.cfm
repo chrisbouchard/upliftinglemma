@@ -1,7 +1,7 @@
 <cfset rc.layout.title = "Christopher J. Bouchard">
 <cfset rc.layout.app = "resumeApp">
 
-<cfsavecontent var="rc.layout.head">
+<cfsavecontent variable="rc.layout.head">
     <!-- Local Style -->
     <link rel="stylesheet" href="/assets/css/theme.css">
     <link rel="stylesheet" href="/assets/css/typography.css">
