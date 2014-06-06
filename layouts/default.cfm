@@ -4,10 +4,15 @@
     <cfset local.layoutConfig = getRCValue("layoutConfig")>
 
     <cfset local.ngApp = "">
+    <cfset local.ngController = "">
     <cfset local.title = "">
 
     <cfif Len(local.layoutConfig.app)>
         <cfset local.ngApp = 'ng-app="' & local.layoutConfig.app & '"'>
+    </cfif>
+
+    <cfif Len(local.layoutConfig.controller)>
+        <cfset local.ngController = 'ng-controller="' & local.layoutConfig.controller & '"'>
     </cfif>
 
     <cfif Len(local.layoutConfig.title)>
@@ -44,11 +49,75 @@
             <!-- Datejs -->
             <script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
+            <!-- Local -->
+            <link rel="stylesheet" href="/assets/css/print.css" medium="print">
+            <link rel="stylesheet" href="/assets/css/structure.css">
+            <link rel="stylesheet" href="/assets/css/theme.css">
+            <link rel="stylesheet" href="/assets/css/typography.css">
+
             #local.layoutConfig.head#
         </head>
 
-        <body>
-            #variables.body#
+        <body #local.ngController#>
+            <div id="wrapper">
+                <div id="content">
+                    <nav id="content-nav" role="navigation"
+                            class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+
+                            <div class="navbar-header pull-left">
+                                <a href="#buildURL("")#" id="upliftinglemma-brand"
+                                        class="navbar-brand pull-left">
+                                    UpliftingLemma
+                                </a>
+                            </div>
+
+                            <div class="navbar-header pull-right">
+                                <button type="button" data-toggle="collapse"
+                                        data-target=".navbar-collapse"
+                                        class="navbar-toggle">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="collapse navbar-collapse navbar-right">
+                                <!-- pull-right keeps the drop-down in line -->
+                                <ul class="nav navbar-nav pull-right">
+                                    <li>
+                                        <a href="#buildURL("resume:main.default")#">
+                                            R&eacute;sum&eacute;
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+
+                    <div id="content-body">
+                        <div class="container">
+                            #variables.body#
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="list-inline">
+                                    <li>
+                                        &copy; 2014 Chris Bouchard
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </body>
     </html>
 </cfoutput>

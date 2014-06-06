@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
+    padding: 50px 0 80px 0;
+}
+
+#footer {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+}
+
+#footer ul {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#footer li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* For small devices and up. */
+@media(min-width:768px) {
+    #content-body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
