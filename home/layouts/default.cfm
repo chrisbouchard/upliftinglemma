@@ -99,7 +99,7 @@
 
                     <div id="content-body">
                         <div class="container">
-                            #variables.body#
+                            #body#
                         </div>
                     </div>
                 </div>
