@@ -1,6 +1,6 @@
 component extends="framework.one" output="false" accessors="true" {
 
-    property layoutService;
+    property layoutConfig;
 
     /* Set up session management. */
     this.sessionManagement = true;
@@ -29,10 +29,9 @@ component extends="framework.one" output="false" accessors="true" {
         return "dev";
     }
 
-    /* Before any other controllers run, set up the layout struct in the
-     * request context. */
-    function before(rc) output="false" {
-        rc.layout = layoutService.getLayoutStruct();
+    /* Set up the layout struct so views can communicate with the layout. */
+    function setupView(rc) output="false" {
+        rc.layoutConfig = layoutConfig.newConfig();
     }
 
 }

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 
-<cfset local.ngApp = "">
+<cfsilent>
+    <cfset local.layoutConfig = getRCValue("layoutConfig")>
 
-<cfif Len(rc.layout.app)>
-    <cfset local.ngApp = 'ng-app="' & rc.lauout.app & '"'>
-</cfif>
+    <cfset local.ngApp = "">
+    <cfset local.title = "">
+
+    <cfif Len(local.layoutConfig.app)>
+        <cfset local.ngApp = 'ng-app="' & local.layoutConfig.app & '"'>
+    </cfif>
+
+    <cfif Len(local.layoutConfig.title)>
+        <cfset local.title = "<title>" & local.layoutConfig.title & "</title>">
+    </cfif>
+</cfsilent>
 
 <cfoutput>
     <html xmlns:ng="http://angularjs.org" id="ng-app" #local.ngApp#>
@@ -13,9 +22,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <cfif Len(rc.layout.title)>
-                <title>#rc.layout.title#</title>
-            </cfif>
+            #local.title#
 
             <!-- jQuery -->
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -37,11 +44,11 @@
             <!-- Datejs -->
             <script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
-            #rc.layout.head#
+            #local.layoutConfig.head#
         </head>
 
         <body>
-            #body#
+            #variables.body#
         </body>
     </html>
 </cfoutput>
