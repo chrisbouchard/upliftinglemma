@@ -66,6 +66,12 @@
                                 chrisjbouchard
                             </a></p></li>
 
+                            <!-- Google+ -->
+                            <li><p><a href="https://plus.google.com/u/1/105233296650473575628">
+                                <span class="fa fa-li fa-google-plus"></span>
+                                chrisbouchard01
+                            </a></p></li>
+
                             <!-- deviantArt -->
                             <li><p><a href="http://chrisbouchard.deviantart.com/">
                                 <span class="fa fa-li fa-deviantart"></span>
