@@ -68,6 +68,7 @@
                             <div class="navbar-header pull-left">
                                 <a href="#buildURL("")#" id="upliftinglemma-brand"
                                         class="navbar-brand pull-left">
+                                    <span class="fa fa-certificate"></span>
                                     UpliftingLemma
                                 </a>
                             </div>
@@ -86,6 +87,11 @@
                             <div class="collapse navbar-collapse navbar-right">
                                 <!-- pull-right keeps the drop-down in line -->
                                 <ul class="nav navbar-nav pull-right">
+                                    <li>
+                                        <a href="#buildURL("home:main.about")#">
+                                            About
+                                        </a>
+                                    </li>
                                     <li>
                                         <a href="#buildURL("resume:main.default")#">
                                             R&eacute;sum&eacute;
@@ -107,10 +113,19 @@
                 <div id="footer">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-xs-6">
                                 <ul class="list-inline">
                                     <li>
                                         &copy; 2014 Chris Bouchard
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="list-inline pull-right">
+                                    <li>
+                                        <a href="#buildURL("home:main.contact")#">
+                                            Contact Us
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
