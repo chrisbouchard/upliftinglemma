@@ -12,6 +12,10 @@ dl.skills-list dd {
     margin-top: 0 !important;
 }
 
+#content {
+    padding-top: 0;
+}
+
 #print-warning {
     margin-bottom: 1em;
 }
