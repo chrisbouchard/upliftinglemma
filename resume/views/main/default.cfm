@@ -13,17 +13,15 @@
 </cfsavecontent>
 
 <!-- Big header -->
-<header class="jumbotron striped">
-    <div class="container">
-        <img id="portrait" class="img-thumbnail hidden-xs hidden-print"
-                alt="Photo of Chris Bouchard"
-                src="/assets/img/portrait.png">
-        <h1>
-            Christopher J. Bouchard<br>
-            <small>Web Application Developer</small>
-        </h1>
-    </div>
-</header>
+<cfsavecontent variable="local.layoutConfig.jumbotron">
+    <img id="portrait" class="img-thumbnail hidden-xs hidden-print"
+            alt="Photo of Chris Bouchard"
+            src="/assets/img/portrait.png">
+    <h1>
+        Christopher J. Bouchard<br>
+        <small>Web Application Developer</small>
+    </h1>
+</cfsavecontent>
 
 <div class="clearfix"></div>
 

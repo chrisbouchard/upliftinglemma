@@ -103,6 +103,17 @@
                         </div>
                     </nav>
 
+                    <!--- TODO: This logic should be handled up at the top of
+                    the template. --->
+                    <cfif Len(local.layoutConfig.jumbotron)>
+                        <!-- Big header -->
+                        <header class="jumbotron striped">
+                            <div class="container">
+                                #local.layoutConfig.jumbotron#
+                            </div>
+                        </header>
+                    </cfif>
+
                     <div id="content-body">
                         <div class="container">
                             #body#

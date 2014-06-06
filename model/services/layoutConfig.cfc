@@ -5,6 +5,7 @@ component output="false" accessors="true" {
             app = "",
             controller = "",
             head = "",
+            jumbotron = "",
             title = ""
         };
     }
