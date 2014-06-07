@@ -1,4 +1,5 @@
-<h1>Hello!</h1>
+<h1>Welcome!</h1>
 
-<p><cfoutput>#getRCValue("message")#</cfoutput></p>
+<p>This site is currently under construction. Check back soon to see what
+we&rsquo;ve added!</p>
 
