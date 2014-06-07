@@ -571,8 +571,8 @@
     </div>
 </div>
 
-<footer>
-    <p id="print-warning" class="visible-print">
+<footer id="print-warning" class="visible-print">
+    <p>
         <span class="fa fa-info-circle"></span>&nbsp;
         <strong>Heads up!</strong> There&rsquo;s a live version of this
         r&eacute;sum&eacute; available
