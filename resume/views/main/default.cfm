@@ -572,21 +572,11 @@
 </div>
 
 <footer>
-    <div class="container">
-        <hr>
-
-        <p id="print-warning" class="visible-print">
-            <span class="fa fa-info-circle"></span>&nbsp;
-            <strong>Heads up!</strong> There&rsquo;s a live version of this
-            r&eacute;sum&eacute; available
-            <a href="http://resume.upliftinglemma.net/">online</a>.
-        </p>
-
-        <p><small>&copy; 2014 Christopher J. Bouchard. This work is licensed
-        under a
-        <a rel="license"
-            href="http://creativecommons.org/licenses/by/4.0/">Creative
-            Commons Attribution 4.0 International License</a>.</small></p>
-    </div>
+    <p id="print-warning" class="visible-print">
+        <span class="fa fa-info-circle"></span>&nbsp;
+        <strong>Heads up!</strong> There&rsquo;s a live version of this
+        r&eacute;sum&eacute; available
+        <a href="http://resume.upliftinglemma.net/">online</a>.
+    </p>
 </footer>
 

@@ -121,7 +121,7 @@
                     </div>
                 </div>
 
-                <div id="footer">
+                <footer id="footer">
                     <div class="container">
                         <div class="pull-left">
                             <ul class="list-inline">
@@ -136,7 +136,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="pull-right">
+                        <div class="pull-right hidden-print">
                             <ul class="list-inline">
                                 <li>
                                     <a href="#buildURL("home:main.contact")#">
@@ -146,7 +146,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </footer>
             </div>
         </body>
     </html>
