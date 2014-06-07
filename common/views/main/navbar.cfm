@@ -28,7 +28,7 @@
                 <cfloop index="local.item" array="#local.items#">
                     <li>
                         <a href="#buildURL(local.item.action)#">
-                            local.item.label
+                            #local.item.label#
                         </a>
                     </li>
                 </cfloop>
