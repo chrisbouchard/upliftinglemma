@@ -35,8 +35,14 @@
             <section>
                 <a id="contact"></a>
                 <div id="my-contact-info" class="row">
-                    <div class="col-sm-6 col-sm-push-6">
+                    <div class="col-sm-6">
                         <ul class="fa-ul">
+                            <!-- Email -->
+                            <li><p><a href="mailto:cbou@cs.albany.edu">
+                                <span class="fa fa-li fa-send"></span>
+                                cbou@cs.albany.edu
+                            </a></p></li>
+
                             <!-- Phone number -->
                             <li><p><a href="callto:15189514883">
                                 <span class="fa fa-li fa-phone"></span>
@@ -52,14 +58,8 @@
                             </p></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-sm-pull-6">
+                    <div class="col-sm-6">
                         <ul class="fa-ul">
-                            <!-- Email -->
-                            <li><p><a href="mailto:cbou@cs.albany.edu">
-                                <span class="fa fa-li fa-send"></span>
-                                cbou@cs.albany.edu
-                            </a></p></li>
-
                             <!-- Skype -->
                             <li><p><a href="skype:chrisjbouchard">
                                 <span class="fa fa-li fa-skype"></span>
