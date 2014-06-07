@@ -171,22 +171,21 @@
                             LeadingAge New York
                         </span>
                         <ul class="duties-list">
-                            <li>Designed and built a web application
-                            for collecting survey data, with
-                            auto-save, using only free software.</li>
+                            <li>Designed and built a web application for
+                            collecting survey data, with auto-save, using only
+                            free software.</li>
                             <li>Deployed development, QA, and production
                             servers for the survey application running
                             CentOS.</li>
-                            <li>Worked with developers at HANYS to
-                            design and test an authentication scheme
-                            for the survey application.</li>
-                            <li>Implemented version control for source
-                            code using git, GitLab, and Jenkins.</li>
-                            <li>Worked within a team of developers to
-                            maintain existing web sites.</li>
-                            <li>Wrote SQL scripts to extract staff and
-                            member information for the annual
-                            mailer.</li>
+                            <li>Worked with developers at HANYS to design and
+                            test an authentication scheme for the survey
+                            application.</li>
+                            <li>Implemented version control for source code
+                            using git, GitLab, and Jenkins.</li>
+                            <li>Worked within a team of developers to maintain
+                            existing web sites.</li>
+                            <li>Wrote SQL scripts to extract staff and member
+                            information for the annual mailer.</li>
                         </ul>
                         <div class="contact">
                             Contact: Linda Spokane (Supervisor, VP Research &amp; Analytics)
@@ -206,8 +205,7 @@
                     <!-- Teaching Assistant -->
                     <li toggle-hidden>
                         <h5 id="suny-ta" cb-timeline-event="career"
-                                data-start="Jan 2010"
-                                data-end="Dec 2013">
+                                data-start="Jan 2010" data-end="Dec 2013">
                             Teaching Assistant
                         </h5>
                         <br class="hidden-sm hidden-print">
@@ -218,13 +216,13 @@
                             University at Albany &mdash; SUNY
                         </span>
                         <ul class="duties-list">
-                            <li>Assisted professors teaching classes in
-                            Java, C, and MIPS assembly programming,
-                            including Unix systems programming.</li>
-                            <li>Held weekly labs for approximately
-                            forty students.</li>
-                            <li>Ran and maintained class grading
-                            scripts in bash and zsh.</li>
+                            <li>Assisted professors teaching classes in Java,
+                            C, and MIPS assembly programming, including Unix
+                            systems programming.</li>
+                            <li>Held weekly labs for approximately forty
+                            students.</li>
+                            <li>Ran and maintained class grading scripts in
+                            bash and zsh.</li>
                         </ul>
                         <div class="contact">
                             Contact: Dr. S. S. Ravi (Professor)
@@ -244,8 +242,7 @@
                     <!-- Research Assistant (Berg) -->
                     <li toggle-hidden>
                         <h5 id="berg-ra" cb-timeline-event="career"
-                                data-start="Jun 2013"
-                                data-end="Aug 2013">
+                                data-start="Jun 2013" data-end="Aug 2013">
                             Research Assistant
                         </h5>
                         <br class="hidden-sm hidden-print">
@@ -256,13 +253,11 @@
                             The Research Foundation &mdash; SUNY
                         </span>
                         <ul class="duties-list">
-                            <li>Helped plan a website to summarize
-                            results of a multi-year research
-                            project.</li>
-                            <li>Researched applications of computer
-                            science and computational thinking in the
-                            teaching of financial market
-                            regulation.</li>
+                            <li>Helped plan a website to summarize results of a
+                            multi-year research project.</li>
+                            <li>Researched applications of computer science and
+                            computational thinking in the teaching of financial
+                            market regulation.</li>
                         </ul>
                         <div class="contact">
                             Contact: Dr. George Berg (Research Advisor)
@@ -282,8 +277,7 @@
                     <!-- Research Assistant (Dran) -->
                     <li>
                         <h5 id="dran-ra" cb-timeline-event="career"
-                                data-start="May 2010"
-                                data-end="Aug 2012">
+                                data-start="May 2010" data-end="Aug 2012">
                             Research Assistant
                         </h5>
                         <br class="hidden-sm hidden-print">
@@ -294,16 +288,14 @@
                             The Research Foundation &mdash; SUNY
                         </span>
                         <ul class="duties-list">
-                            <li>Researched term rewriting and
-                            equational unification modulo serveral
-                            theories, including the theory of block
-                            chaining.</li>
-                            <li>Co-authored peer-reviewed papers which
-                            were accepted at conferences and workshops
-                            such as LATA and UNIF.</li>
-                            <li>Managed a private Git server for the
-                            research group to manage papers and
-                            projects.</li>
+                            <li>Researched term rewriting and equational
+                            unification modulo serveral theories, including the
+                            theory of block chaining.</li>
+                            <li>Co-authored peer-reviewed papers which were
+                            accepted at conferences and workshops such as LATA
+                            and UNIF.</li>
+                            <li>Managed a private Git server for the research
+                            group to manage papers and projects.</li>
                         </ul>
                         <div class="contact">
                             Contact: Dr. Paliath Narendran (Research Advisor)
@@ -323,8 +315,7 @@
                     <!-- NYAHSA Services -->
                     <li>
                         <h5 id="nyahsa-intern" cb-timeline-event="career"
-                                data-start="Jun 2007"
-                                data-end="Aug 2009">
+                                data-start="Jun 2007" data-end="Aug 2009">
                             Intern
                         </h5>
                         <br class="hidden-sm hidden-print">
@@ -335,17 +326,16 @@
                             NYAHSA Services (Now LeadingAge NY Services)
                         </span>
                         <ul class="duties-list">
-                            <li>Developed web applications using
-                            ColdFusion, JavaScript, and Microsoft SQL
-                            Server.</li>
-                            <li>Designed a SQL database schema and
-                            ColdFusion front-end for storing and
-                            analyzing survey results.</li>
-                            <li>Assisted in redesigning the company
-                            website using Mura CMS.</li>
-                            <li>Prototyped an interface using Adobe
-                            Flex for organizing and running reports in
-                            the EQUIP analysis tool.</li>
+                            <li>Developed web applications using ColdFusion,
+                            JavaScript, and Microsoft SQL Server.</li>
+                            <li>Designed a SQL database schema and ColdFusion
+                            front-end for storing and analyzing survey
+                            results.</li>
+                            <li>Assisted in redesigning the company website
+                            using Mura CMS.</li>
+                            <li>Prototyped an interface using Adobe Flex for
+                            organizing and running reports in the EQUIP
+                            analysis tool.</li>
                             <li>Maintained existing ColdFusion and SQL
                             applications.</li>
                         </ul>
@@ -384,8 +374,8 @@
                     Maude, Python</dd>
 
                     <dt>Familiar</dt>
-                    <dd>C++, Flex, PHP, SQL (MS SQL Server,
-                    PostgreSQL), Shell scripting (bash, zsh)</dd>
+                    <dd>C++, Flex, PHP, SQL (MS SQL Server, PostgreSQL), Shell
+                    scripting (bash, zsh)</dd>
 
                     <dt>Known</dt>
                     <dd>Haskell, Matlab, ML, SQL (MySQL)</dd>
@@ -409,14 +399,13 @@
                     <li>
                         <a href="http://resume.upliftinglemma.net"
                                 title="View on UpliftingLemma">
-                            <h5>This R&eacute;sum&eacute;</h5>
+                            <h5>Uplifting Lemma</h5>
                         </a>
-                        <p>A small Bootstrap/Angular.js project.</p>
+                        <p>A small project built on FW/1, Bootstrap, and
+                        Angular.js.</p>
                         <p>This site serves a dual purpose: it hosts my
-                        r&eacute;sum&eacute;, and it allows me to play
-                        around with Bootstrap and Angular.js. It&rsquo;s
-                        completely static, so the source is fully
-                        available.</p>
+                        r&eacute;sum&eacute;, and it allows me to play around
+                        with the latest versions of these frameworks.</p>
                     </li>
 
                     <!-- Terminator -->
@@ -427,12 +416,11 @@
                         </a>
                         <p>A C program to run a command as though in a
                         terminal.</p>
-                        <p>While grading students&rsquo; C programs, I
-                        noticed that some behaved differently depending
-                        on whether they were output to the terminal or
-                        to a file. I wrote this program to trick their
-                        programs into behaving as though they were
-                        outputting to the terminal.</p>
+                        <p>While grading students&rsquo; C programs, I noticed
+                        that some behaved differently depending on whether they
+                        were output to the terminal or to a file. I wrote this
+                        program to trick their programs into behaving as though
+                        they were outputting to the terminal.</p>
                     </li>
 
                     <!-- Bartender -->
@@ -441,14 +429,13 @@
                                 title="View on GitHub">
                             <h5>Bartender</h5>
                         </a>
-                        <p>A status bar server written in Haskell and
-                        built around dzen2.</p>
-                        <p>A few years ago I switched to using XMonad
-                        as my primary window manager. I love the
-                        simplicity, but I was not happy with the
-                        existing status bars. This project is my
-                        attempt at building a modular status bar built
-                        around a central server and separate client
+                        <p>A status bar server written in Haskell and built
+                        around dzen2.</p>
+                        <p>A few years ago I switched to using XMonad as my
+                        primary window manager. I love the simplicity, but I
+                        was not happy with the existing status bars. This
+                        project is my attempt at building a modular status bar
+                        built around a central server and separate client
                         widgets.</p>
                     </li>
 
@@ -458,14 +445,14 @@
                                 title="View on GitHub">
                             <h5>Othello AI</h5>
                         </a>
-                        <p>A Java-based AI and GUI to play the game
-                        Othello (a.k.a. Reversi).</p>
-                        <p>I wrote this program as part of a team for
-                        an AI course in college. The AI consists of a
-                        &ldquo;council&rdquo; of small AI routines that
-                        examine different aspects of the game state and
-                        vote on the best move. The GUI was built using
-                        an MVC design with Swing.</p>
+                        <p>A Java-based AI and GUI to play the game Othello
+                        (a.k.a. Reversi).</p>
+                        <p>I wrote this program as part of a team for an AI
+                        course in college. The AI consists of a
+                        &ldquo;council&rdquo; of small AI routines that examine
+                        different aspects of the game state and vote on the
+                        best move. The GUI was built using an MVC design with
+                        Swing.</p>
                     </li>
 
                     <!-- Boolean Expression Solver -->
@@ -474,13 +461,13 @@
                                 title="View on SourceForge">
                             <h5>Boolean Expression Solver</h5>
                         </a>
-                        <p>A Java-based utility that generates a truth
-                        table for a given Boolean expression.</p>
-                        <p>This was another class project. We were
-                        tasked to create a program to evaluate boolean
-                        expressions in infix notation. I extended it
-                        also evaluate subexpressions and accept a wider
-                        range of operators.</p>
+                        <p>A Java-based utility that generates a truth table
+                        for a given Boolean expression.</p>
+                        <p>This was another class project. We were tasked to
+                        create a program to evaluate boolean expressions in
+                        infix notation. I extended it also evaluate
+                        subexpressions and accept a wider range of
+                        operators.</p>
                     </li>
                 </ul>
             </section>
@@ -492,25 +479,24 @@
                     <!-- GNU/Linux -->
                     <li>
                         <h5>GNU/Linux</h5>
-                        <p>I administer a personal GNU/Linux server
-                        running Gentoo, including a web server and a
-                        file server, with a custom-compiled kernel. In
-                        fact, that&rsquo;s the
+                        <p>I administer a personal GNU/Linux server running
+                        Gentoo, including a web server and a file server, with
+                        a custom-compiled kernel. In fact, that&rsquo;s the
                         <a href="http://upliftinglemma.net">web server</a>
                         where this r&eacute;sum&eacute; is hosted.</p>
-                        <p>I love Gentoo because I enjoy playing with
-                        the bleeding edge of free software. If
-                        there&rsquo;s a beta available, I want it. I
-                        also like the idea of distributing programs by
-                        source &mdash; it may be slower to compile, but
-                        it allows much more configuration.</p>
+                        <p>I love Gentoo because I enjoy playing with the
+                        bleeding edge of free software. If there&rsquo;s a beta
+                        available, I want it. I also like the idea of
+                        distributing programs by source &mdash; it may be
+                        slower to compile, but it allows much more
+                        configuration.</p>
                     </li>
 
                     <!-- Art -->
                     <li>
                         <h5>Art</h5>
-                        <p>I enjoy photography, vector, and pixel art,
-                        and I&rsquo;ve been a
+                        <p>I enjoy photography, vector, and pixel art, and
+                        I&rsquo;ve been a
                         <a href="http://chrisbouchard.deviantart.com/">member</a>
                         of the online art community
                         <a href="http://www.deviantart.com/">deviantART</a>
@@ -544,8 +530,8 @@
                     <li>
                         <h5>Some Notes on Basic Syntactic Mutation</h5>
                         <br>
-                        Christopher Bouchard, Kimberly A Gero, and
-                        Paliath Narendran<br>
+                        Christopher Bouchard, Kimberly A Gero, and Paliath
+                        Narendran<br>
                         <i>26th International Workshop on Unification</i>,
                         pp 9&ndash;14. 2012.
                     </li>
@@ -554,8 +540,8 @@
                     <li>
                         <h5>Unification modulo Chaining</h5>
                         <br>
-                        Siva Anantharaman, Christopher Bouchard,
-                        Paliath Narendran, and Micha&euml;l Rusinowitch.<br>
+                        Siva Anantharaman, Christopher Bouchard, Paliath
+                        Narendran, and Micha&euml;l Rusinowitch.<br>
                         <i>Language and Automata Theory and Applications</i>,
                         pp 70&ndash;82. 2012.
                         <ul class="duties-list">
