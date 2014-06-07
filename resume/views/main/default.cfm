@@ -397,15 +397,16 @@
                 <ul class="list-unstyled section-list">
                     <!-- Resume -->
                     <li>
-                        <a href="http://resume.upliftinglemma.net"
-                                title="View on UpliftingLemma">
+                        <a href="https://github.com/chrisbouchard/upliftinglemma"
+                                title="View on GitHub">
                             <h5>Uplifting Lemma</h5>
                         </a>
                         <p>A small project built on FW/1, Bootstrap, and
                         Angular.js.</p>
-                        <p>This site serves a dual purpose: it hosts my
+                        <p>You are looking at this project right now! This site
+                        serves a dual purpose: it hosts my
                         r&eacute;sum&eacute;, and it allows me to play around
-                        with the latest versions of these frameworks.</p>
+                        with the latest versions of my favorite frameworks.</p>
                     </li>
 
                     <!-- Terminator -->
