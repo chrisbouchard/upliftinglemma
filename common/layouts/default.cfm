@@ -61,7 +61,7 @@
         <body #local.ngController#>
             <div id="wrapper">
                 <div id="content">
-                    #view("common:main.navbar", {
+                    #view("common:main/navbar", {
                         items = [
                             { action = "home:main.about", label = "About" },
                             { action = "resume:main.default", label = "R&reacute;sum&reacute;" }
