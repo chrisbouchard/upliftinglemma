@@ -64,7 +64,7 @@
                     #view("common:main/navbar", {
                         items = [
                             { action = "home:main.about", label = "About" },
-                            { action = "resume:main.default", label = "R&reacute;sum&reacute;" }
+                            { action = "resume:main.default", label = "R&eacute;sum&eacute;" }
                         ]
                     })#
 
