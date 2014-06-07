@@ -1,7 +1,7 @@
 <cfset local.layoutConfig = getRCValue("layoutConfig")>
 
 <cfset local.layoutConfig.title = "Christopher J. Bouchard">
-<cfset local.layoutConfig.app = "resumeApp">
+<cfset local.layoutConfig.app = "ResumeApp">
 
 <cfsavecontent variable="local.layoutConfig.head">
     <!-- Resume App -->
