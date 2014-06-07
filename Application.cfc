@@ -10,6 +10,8 @@ component extends="framework.one" output="false" accessors="true" {
     variables.framework = {
         usingSubsystems = true,
         applicationKey = "UpliftingLemma",
+        generateSES = true,
+        SESOmitIndex = true,
 
         diEngine = "di1",
         diLocations = "controllers,model",
