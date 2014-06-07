@@ -123,28 +123,17 @@
 
                 <footer id="footer">
                     <div class="container">
-                        <div class="pull-left">
-                            <ul class="list-inline">
-                                <li>
-                                    &copy; 2014 Christopher Bouchard. This work
-                                    is licensed under a
-                                    <a href="http://creativecommons.org/licenses/by/4.0/"
-                                            rel="license">
-                                        Creative Commons Attribution 4.0
-                                        International License
-                                    </a>.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pull-right hidden-print">
-                            <ul class="list-inline">
-                                <li>
-                                    <a href="#buildURL("home:main.contact")#">
-                                        Contact Us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <p>
+                            <small>
+                                &copy; 2014 Christopher Bouchard. This work is
+                                licensed under a
+                                <a href="http://creativecommons.org/licenses/by/4.0/"
+                                        rel="license">
+                                    Creative Commons Attribution 4.0
+                                    International License
+                                </a>.
+                            </small>
+                        </p>
                     </div>
                 </footer>
             </div>
