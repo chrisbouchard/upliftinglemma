@@ -61,47 +61,12 @@
         <body #local.ngController#>
             <div id="wrapper">
                 <div id="content">
-                    <nav id="content-nav" role="navigation"
-                            class="navbar navbar-default navbar-fixed-top">
-                        <div class="container">
-
-                            <div class="navbar-header pull-left">
-                                <a href="#buildURL("")#" id="upliftinglemma-brand"
-                                        class="navbar-brand pull-left">
-                                    <span class="fa fa-certificate"></span>
-                                    Uplifting Lemma
-                                </a>
-                            </div>
-
-                            <div class="navbar-header pull-right">
-                                <button type="button" data-toggle="collapse"
-                                        data-target=".navbar-collapse"
-                                        class="navbar-toggle">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-
-                            <div class="collapse navbar-collapse navbar-right">
-                                <!-- pull-right keeps the drop-down in line -->
-                                <ul class="nav navbar-nav pull-right">
-                                    <li>
-                                        <a href="#buildURL("home:main.about")#">
-                                            About
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#buildURL("resume:main.default")#">
-                                            R&eacute;sum&eacute;
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </nav>
+                    #view("common:main.navbar", {
+                        items = [
+                            { action = "home:main.about", label = "About" },
+                            { action = "resume:main.default", label = "R&reacute;sum&reacute;" }
+                        ]
+                    })#
 
                     <!--- TODO: This logic should be handled up at the top of
                     the template. --->
