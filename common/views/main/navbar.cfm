@@ -12,7 +12,7 @@
                 <a href="#buildURL(local.action)#"
                         class="navbar-brand pull-left">
                     <img src="/assets/img/upliftinglemma_logo.svg"
-                            class="img-responsive">
+                            id="upliftinglemma-logo">
                     #local.name#
                 </a>
             </div>
