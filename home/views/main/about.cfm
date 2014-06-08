@@ -3,7 +3,7 @@
 <cfsavecontent variable="local.layoutConfig.jumbotron">
     <h1>Uplifting Lemma</h1>
 
-    <p>A web dev&rsquo;s playground&elipsis;</p>
+    <p>A web dev&rsquo;s playground&hellip;</p>
 </cfsavecontent>
 
 
