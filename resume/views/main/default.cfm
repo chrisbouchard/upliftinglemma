@@ -35,7 +35,7 @@
             <section>
                 <a id="contact"></a>
                 <div id="my-contact-info" class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 col-print-6">
                         <ul class="fa-ul">
                             <!-- Email -->
                             <li><p><a href="mailto:cbou@cs.albany.edu">
@@ -58,7 +58,7 @@
                             </p></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 col-print-6">
                         <ul class="fa-ul">
                             <!-- Skype -->
                             <li><p><a href="skype:chrisjbouchard">

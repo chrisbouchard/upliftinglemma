@@ -36,3 +36,8 @@ dl.skills-list dd {
     display: none;
 }
 
+.col-print-6 {
+    float: left;
+    width: 50%;
+}
+
