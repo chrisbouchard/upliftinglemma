@@ -27,6 +27,7 @@ dl.skills-list dd {
 /* The jumbotron doesn't need padding without a background color. */
 .jumbotron {
     padding: 0;
+    margin: 0;
     background: none;
 }
 
