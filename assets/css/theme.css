@@ -38,10 +38,11 @@ h1, h2, h3, h4, h5, h6, h5 {
 
 .navbar-brand {
     padding-left: 40px;
-    background: url(/assets/img/upliftinglemma_logo.svg);
-    -webkit-background-size: auto 50px;
-    -moz-background-size: auto 50px;
-    background-size: auto 50px;
+    background-image: url(/assets/img/upliftinglemma_logo.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    background-size: auto 100%;
 }
 
 .striped {
