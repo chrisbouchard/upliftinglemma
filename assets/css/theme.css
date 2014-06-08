@@ -147,6 +147,7 @@ h2:hover .section-link {
 }
 
 .toggle-hidden-hidden > h5,
+.toggle-hidden-hidden > h5 + br,
 .toggle-hidden-hidden > *.title,
 .toggle-hidden-hidden > *.date {
     display: block;

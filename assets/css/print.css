@@ -1,7 +1,8 @@
 /* Bootstrap automatically inserts the URL of a link after the link in
  * printed media. Good idea in theory, but not always desireable. */
+a[href^="callto:"]::after,
 a[href^="mailto:"]::after,
-a[href^="callto:"]::after {
+a[href^="skype:"]::after {
     content: "" !important;
 }
 
@@ -12,6 +13,8 @@ dl.skills-list dd {
     margin-top: 0 !important;
 }
 
+/* Since the menubar doesn't print, we can remove the padding at the top of the
+ * page. */
 #content {
     padding-top: 0;
 }
@@ -21,10 +24,13 @@ dl.skills-list dd {
     margin-bottom: 1em;
 }
 
+/* The jumbotron doesn't need padding without a background color. */
 .jumbotron {
     padding: 0;
+    background: none;
 }
 
+/* Never show a section link icon when printing. */
 .section-link {
     display: none;
 }
