@@ -6,6 +6,12 @@ a[href^="skype:"]::after {
     content: "" !important;
 }
 
+/* Never show the URL for a link in the contact info section. Since it's a list
+ * of usernames, the URLs are easy to recover. */
+#my-contact-info a::after {
+    content: "" !important;
+}
+
 /* Skills list is a horizontal list, so on screen we need to add margin above
  * both the dt's and the dd's. In print, it's stacked vertically, so we only
  * need a margin above the dt's. */
