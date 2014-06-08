@@ -21,6 +21,10 @@ dl.skills-list dd {
     margin-bottom: 1em;
 }
 
+.jumbotron {
+    padding: 0 0 1em 0;
+}
+
 .section-link {
     display: none;
 }
