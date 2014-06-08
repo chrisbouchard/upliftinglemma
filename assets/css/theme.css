@@ -142,15 +142,11 @@ h2:hover .section-link {
     margin-right: .75ex;
 }
 
-.toggle-hidden-hidden > * {
+.toggle-hidden-hidden .hidden-content {
     display: none;
 }
 
-.toggle-hidden-hidden > h5,
-.toggle-hidden-hidden > h5 + br,
-.toggle-hidden-hidden > *.title,
-.toggle-hidden-hidden > *.date {
-    display: block;
+.toggle-hidden-hidden {
     color: rgba(0, 0, 0, 0.40);
 }
 

@@ -211,32 +211,34 @@
                         <br class="hidden-sm hidden-print">
                         <span class="date">
                             2010&ndash;2013
-                        </span><br>
-                        <span class="university">
-                            University at Albany &mdash; SUNY
                         </span>
-                        <ul class="duties-list">
-                            <li>Assisted professors teaching classes in Java,
-                            C, and MIPS assembly programming, including Unix
-                            systems programming.</li>
-                            <li>Held weekly labs for approximately forty
-                            students.</li>
-                            <li>Ran and maintained class grading scripts in
-                            bash and zsh.</li>
-                        </ul>
-                        <div class="contact">
-                            Contact: Dr. S. S. Ravi (Professor)
+                        <div class="hidden-content">
+                            <span class="university">
+                                University at Albany &mdash; SUNY
+                            </span>
+                            <ul class="duties-list">
+                                <li>Assisted professors teaching classes in
+                                Java, C, and MIPS assembly programming,
+                                including Unix systems programming.</li>
+                                <li>Held weekly labs for approximately forty
+                                students.</li>
+                                <li>Ran and maintained class grading scripts in
+                                bash and zsh.</li>
+                            </ul>
+                            <div class="contact">
+                                Contact: Dr. S. S. Ravi (Professor)
+                            </div>
+                            <ul class="list-inline contact-info">
+                                <li><a href="mailto:ravi@cs.albany.edu">
+                                    <span class="fa fa-send"></span><!--
+                                    -->ravi@cs.albany.edu
+                                </a></li>
+                                <li><a href="callto:15184424278">
+                                    <span class="fa fa-phone"></span><!--
+                                    -->+1 (518) 442-4278
+                                </a></li>
+                            </ul>
                         </div>
-                        <ul class="list-inline contact-info">
-                            <li><a href="mailto:ravi@cs.albany.edu">
-                                <span class="fa fa-send"></span><!--
-                                -->ravi@cs.albany.edu
-                            </a></li>
-                            <li><a href="callto:15184424278">
-                                <span class="fa fa-phone"></span><!--
-                                -->+1 (518) 442-4278
-                            </a></li>
-                        </ul>
                     </li>
 
                     <!-- Research Assistant (Berg) -->
@@ -248,30 +250,32 @@
                         <br class="hidden-sm hidden-print">
                         <span class="date">
                             Summer 2013
-                        </span><br>
-                        <span class="university">
-                            The Research Foundation &mdash; SUNY
                         </span>
-                        <ul class="duties-list">
-                            <li>Helped plan a website to summarize results of a
-                            multi-year research project.</li>
-                            <li>Researched applications of computer science and
-                            computational thinking in the teaching of financial
-                            market regulation.</li>
-                        </ul>
-                        <div class="contact">
-                            Contact: Dr. George Berg (Research Advisor)
+                        <div class="hidden-content">
+                            <span class="university">
+                                The Research Foundation &mdash; SUNY
+                            </span>
+                            <ul class="duties-list">
+                                <li>Helped plan a website to summarize results
+                                of a multi-year research project.</li>
+                                <li>Researched applications of computer science
+                                and computational thinking in the teaching of
+                                financial market regulation.</li>
+                            </ul>
+                            <div class="contact">
+                                Contact: Dr. George Berg (Research Advisor)
+                            </div>
+                            <ul class="list-inline contact-info">
+                                <li><a href="mailto:berg@cs.albany.edu">
+                                    <span class="fa fa-send"></span><!--
+                                    -->berg@cs.albany.edu
+                                </a></li>
+                                <li><a href="callto:15184424267">
+                                    <span class="fa fa-phone"></span><!--
+                                    -->+1 (518) 442-4267
+                                </a></li>
+                            </ul>
                         </div>
-                        <ul class="list-inline contact-info">
-                            <li><a href="mailto:berg@cs.albany.edu">
-                                <span class="fa fa-send"></span><!--
-                                -->berg@cs.albany.edu
-                            </a></li>
-                            <li><a href="callto:15184424267">
-                                <span class="fa fa-phone"></span><!--
-                                -->+1 (518) 442-4267
-                            </a></li>
-                        </ul>
                     </li>
 
                     <!-- Research Assistant (Dran) -->
