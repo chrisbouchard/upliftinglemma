@@ -10,7 +10,7 @@ html, body {
 }
 
 #content {
-    padding: 50px 0 80px 0;
+    padding: 50px 0 3em 0;
 }
 
 #footer {
@@ -19,7 +19,7 @@ html, body {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 50px;
+    height: 2em;
 }
 
 #footer ul {
