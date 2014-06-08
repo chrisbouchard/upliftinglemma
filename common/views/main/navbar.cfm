@@ -11,8 +11,6 @@
             <div class="navbar-header pull-left">
                 <a href="#buildURL(local.action)#"
                         class="navbar-brand pull-left">
-                    <img src="/assets/img/upliftinglemma_logo.svg"
-                            id="upliftinglemma-logo">
                     #local.name#
                 </a>
             </div>

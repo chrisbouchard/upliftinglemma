@@ -36,6 +36,14 @@ h1, h2, h3, h4, h5, h6, h5 {
     clear: none;
 }
 
+.navbar-brand {
+    padding-left: 40px;
+    background: url(/assets/img/upliftinglemma_logo.svg);
+    -webkit-background-size: auto 50px;
+    -moz-background-size: auto 50px;
+    background-size: auto 50px;
+}
+
 .striped {
     -webkit-background-size: 4ex 4ex;
     -moz-background-size: 4ex 4ex;
