@@ -23,8 +23,7 @@
 
     $(function () {
         $(window).on('hashchange', function (event) {
-            console.log('Hash change!');
-            var element = $('#' + location.hash);
+            var element = $(location.hash);
             var offset = element.offset();
             var navHeight = $('#navbar').height();
 
