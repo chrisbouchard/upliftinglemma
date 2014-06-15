@@ -19,3 +19,13 @@ lemmas.</p>
 Lemma</span> is more than a stepping stone; it&rsquo;s a rock to cling to as
 the tide comes in. It&rsquo;s the fact that makes things click.</p>
 
+<h2>About Me</h2>
+
+<p>I&rsquo;m is a web developer, current working on my Ph.D. thesis in computer
+science. I&rsquo;ve been programming since I was 10 years old, when my dad
+showed me BASIC. That stupid little black-and-white prompt changed my life,
+because by high school I had already decided that I wanted to be a professional
+programmer.</p>
+
+<h2>About This Site</h2>
+
