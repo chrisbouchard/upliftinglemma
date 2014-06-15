@@ -43,5 +43,7 @@ The site is built on the <a href="https://github.com/framework-one/fw1">FW/1
 framework</a>, running on <a href="http://www.getrailo.org/">Railo</a>.
 I&rsquo;ve used ColdFusion for a while now in my day job, and CFML is a quick
 and easy language to use. The theme is built using <a
-href="http://getbootstrap.com/">Bootstrap</a>.
+href="http://getbootstrap.com/">Bootstrap</a>. The interactive components were
+built using <a href="http://jquery.com/">jQuery</a> and <a
+href="https://angularjs.org/">Angular.js</a>.
 
