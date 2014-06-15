@@ -37,13 +37,14 @@ programming languages makes development quick and fun.</p>
 
 <p><span class="upliftinglemma">Uplifting Lemma</span> is, first and foremost,
 an experiment. It exists to play around with whatever frameworks and libraries
-interest me.
+interest me. As I work on different web-based projects, I&rsquo;ll hook them
+off this site.</p>
 
-The site is built on the <a href="https://github.com/framework-one/fw1">FW/1
+<p>The site is built on the <a href="https://github.com/framework-one/fw1">FW/1
 framework</a>, running on <a href="http://www.getrailo.org/">Railo</a>.
 I&rsquo;ve used ColdFusion for a while now in my day job, and CFML is a quick
 and easy language to use. The theme is built using <a
 href="http://getbootstrap.com/">Bootstrap</a>. The interactive components were
 built using <a href="http://jquery.com/">jQuery</a> and <a
-href="https://angularjs.org/">Angular.js</a>.
+href="https://angularjs.org/">Angular.js</a>.</p>
 
