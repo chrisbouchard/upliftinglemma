@@ -9,8 +9,7 @@
     <div class="panel panel-info">
         <div class="panel-heading">
             <h3 class="panel-title">
-                <img src="http://upload.wikimedia.org/wiktionary/en/f/f5/favicon.png"
-                        class="ul-panel-icon">
+                <i class="wiktionary-icon"></i>
                 lemma
             </h3>
         </div>
