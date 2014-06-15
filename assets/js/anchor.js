@@ -22,12 +22,14 @@
     });
 
     $(function () {
-        $(window).on('hashchange', function (event) {
+        $(document).on('click', 'a', function (event) {
             var offset;
             var navHeight;
 
-            if (location.hash.length !== 0) {
-                offset = $(location.hash).offset().top;
+            var href = $(this).attr('href');
+
+            if (href.charAt(0) === '#') {
+                offset = $(this).offset().top;
                 navHeight = $('#navbar').height();
 
                 $(window).scrollTop(offset - navHeight);
