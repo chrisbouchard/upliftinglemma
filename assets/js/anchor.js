@@ -26,7 +26,7 @@
             var offset;
             var navHeight;
 
-            if (location.hash.length === 0) {
+            if (location.hash.length !== 0) {
                 offset = $(location.hash).offset().top;
                 navHeight = $('#navbar').height();
 
