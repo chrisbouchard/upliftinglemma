@@ -88,7 +88,6 @@
 
                 <footer id="footer">
                     <div class="container">
-                        <hr>
                         <p>
                             <small>
                                 &copy; 2014 Christopher Bouchard. This work is
