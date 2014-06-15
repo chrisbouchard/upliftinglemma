@@ -23,12 +23,16 @@
 
     $(function () {
         $(window).on('hashchange', function (event) {
-            var element = $(location.hash);
-            var offset = element.offset().top;
-            var navHeight = $('#navbar').height();
+            var offset;
+            var navHeight;
 
-            $(window).scrollTop(offset - navHeight);
-            event.preventDefault();
+            if (location.hash.length === 0) {
+                offset = $(location.hash).offset().top;
+                navHeight = $('#navbar').height();
+
+                $(window).scrollTop(offset - navHeight);
+                event.preventDefault();
+            }
         });
     });
 })();
