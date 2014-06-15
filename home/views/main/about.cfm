@@ -55,5 +55,8 @@ head around Angular.js. Now either the madness is setting in or I&rsquo;m
 beginning to understand how it&rsquo;s meant to work.</p>
 
 <p>The font you see is <a href="http://www.linuxlibertine.org/">Linux
-Libertine</a>, a free, open, and (I think) beautiful seriffed font.
+Libertine</a>, a free, open, and beautiful seriffed font. Writing papers in
+<span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> has spoiled me for
+typesetting, but the kerning and OpenType features of Linux Libertine go a long
+way toward making browser text look good.
 
