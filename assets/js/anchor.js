@@ -21,11 +21,14 @@
         };
     });
 
-    $('body').on('click', 'a.section-link', function (event) {
+    $('body').on('click', 'a', function (event) {
+        var href = $(this).href();
         var offset = $(this).offset();
         var navHeight = $('#navbar').height();
 
-        $('body').scrollTop(offset - navHeight);
-        event.preventDefault();
+        if (href.charAt(0) === '#') {
+            $('body').scrollTop(offset - navHeight);
+            event.preventDefault();
+        }
     });
 })();
