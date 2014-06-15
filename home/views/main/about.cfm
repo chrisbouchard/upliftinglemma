@@ -31,8 +31,8 @@ programmer.</p>
 
 <p>I enjoy just about any sort of programming, but I feel I&rsquo;m most drawn
 to web programming. The World Wide Web is such an amazing platform (think about
-it for a moment: code running on my computer is sending content across the
-world to your screen). The dynamicness and flexibility of (most) web
+it for a moment: code running on my computer is sending content <em>across the
+world</em> to your screen). The dynamicness and flexibility of (most) web
 programming languages makes development quick and fun.</p>
 
 
