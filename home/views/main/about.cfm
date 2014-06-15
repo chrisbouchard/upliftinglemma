@@ -6,7 +6,29 @@
 </cfsavecontent>
 
 <div class="pull-right">
-    <h3>Hello World</h3>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">lemma</h3>
+        </div>
+        <div class="panel-body">
+            <h4>Noun</h4>
+            <p><b>lemma</b> (plural <b>lemmas</b> or <b>lemmata</b>)</p>
+            <ol>
+                <li><i>(mathematics)</i> A proposition proved or accepted for
+                immediate use in the proof of some other proposition.</li>
+
+                <li><i>(linguistics, usually)</i> The canonical form of an
+                inflected word.</li>
+
+                <li><i>(linguistics, less frequently)</i> A lexeme; all the
+                inflected forms of a term.</li>
+
+                <li><i>(botany)</i> One of the specialized bracts around the
+                floret in grasses.</li>
+            </ol>
+            <p>From <a href="http://en.wiktionary.org/wiki/lemma">Wiktionary: lemma</a></p>
+        </div>
+    </div>
 </div>
 
 <p><a href="http://en.wikipedia.org/wiki/Lemma_(mathematics)">According to
