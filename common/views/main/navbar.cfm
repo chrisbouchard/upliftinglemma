@@ -31,7 +31,7 @@
                     <cfloop index="local.item" array="#local.items#">
                         <cfset local.active = "">
                         <cfif local.item.action EQ local.currentAction>
-                            <cfset local.active = 'class="active"'
+                            <cfset local.active = 'class="active"'>
                         </cfif>
 
                         <li #local.active#>
