@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5, h6, h5 {
 
 .wiktionary-icon {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 1em;
+    height: 1em;
     background-image: url(http://upload.wikimedia.org/wiktionary/en/f/f5/favicon.png);
     background-size: 100% 100%;
 }
