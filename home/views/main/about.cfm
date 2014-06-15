@@ -1,7 +1,8 @@
 <cfset local.layoutConfig = getRCValue("layoutConfig")>
+<cfset local.layoutConfig.title = "About">
 
 <cfsavecontent variable="local.layoutConfig.jumbotron">
-    <h1>Uplifting Lemma<br><small>Or, where have all the good domain names
+    <h1>About the Uplifting Lemma<br><small>Or, where have all the good domain names
     gone?</small></h1>
 </cfsavecontent>
 
@@ -53,7 +54,8 @@ algebra class or a Haskell blog. Looking around now, all I can find are <a
 href="http://en.wikipedia.org/wiki/Hensel%27s_lemma">Hensel&rsquo;s lifting
 lemma</a> regarding roots of polynomial equations modulo primes and <a
 href="http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/26/slides/ralf.pdf">a
-presentation</a> by a Dr. Ralf Hinze entitled <i>The Lifting Lemma</i>.
+presentation</a> by a Dr. Ralf Hinze entitled <i>The Lifting Lemma</i>,
+neither of which seems familiar.
 
 
 
