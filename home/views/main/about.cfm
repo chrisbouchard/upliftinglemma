@@ -5,8 +5,11 @@
     gone?</small></h1>
 </cfsavecontent>
 
-<a href="http://en.wikipedia.org/wiki/Lemma_(mathematics)">According to
-Wikipedia</a>, the word <i>lemma</i> comes from the ancient Greek <i>λῆμμα</i>,
-meaning &ldquo;anything which is received, such as a gift, profit, or a
-bribe&rsquo;.
+<p class="lead">
+    <a href="http://en.wikipedia.org/wiki/Lemma_(mathematics)">According to
+    Wikipedia</a>, the word <i>lemma</i> comes from the ancient Greek
+    <i>λῆμμα</i> meaning &ldquo;anything which is received, such as a gift,
+    profit, or a bribe&rdquo;. A lemma is a &ldquo;stepping stone&rsquo; to a
+    theorem, a necessary building block for a result.
+</p>
 
