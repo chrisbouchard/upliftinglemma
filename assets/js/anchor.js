@@ -24,7 +24,7 @@
     $(function () {
         $(window).on('hashchange', function (event) {
             var element = $(location.hash);
-            var offset = element.offset();
+            var offset = element.offset().top;
             var navHeight = $('#navbar').height();
 
             $(window).scrollTop(offset - navHeight);
