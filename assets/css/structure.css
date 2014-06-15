@@ -15,8 +15,7 @@ body {
 }
 
 #navbar {
-    position: absolute;
-    top: -40px;
+    margin-top: -50px;
 }
 
 #wrapper {
