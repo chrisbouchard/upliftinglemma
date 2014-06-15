@@ -53,7 +53,8 @@ h1, h2, h3, h4, h5, h6, h5 {
 
 .navbar-brand {
     padding-left: 47px;
-    background-image: url(/assets/img/upliftinglemma_logo_navbar.png);
+    background-image: url(/assets/img/upliftinglemma_logo_navbar.svg);
+    background-size: auto 40px;
     background-repeat: no-repeat;
     background-position: 0 5px;
 }
