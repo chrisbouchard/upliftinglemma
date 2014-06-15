@@ -21,14 +21,12 @@
         };
     });
 
-    $('body').on('click', 'a', function (event) {
-        var href = $(this).href();
-        var offset = $(this).offset();
+    $('body').on('hashchange', function (event) {
+        var element = $('#' + location.hash);
+        var offset = element.offset();
         var navHeight = $('#navbar').height();
 
-        if (href.charAt(0) === '#') {
-            $('body').scrollTop(offset - navHeight);
-            event.preventDefault();
-        }
+        $('body').scrollTop(offset - navHeight);
+        event.preventDefault();
     });
 })();
