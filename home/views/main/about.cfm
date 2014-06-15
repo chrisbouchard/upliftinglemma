@@ -5,10 +5,13 @@
     gone?</small></h1>
 </cfsavecontent>
 
-<div class="pull-right col-sm-3">
+<div class="pull-right col-sm-4">
     <div class="panel panel-info">
         <div class="panel-heading">
-            <h3 class="panel-title">lemma</h3>
+            <h3 class="panel-title">
+                <img src="http://upload.wikimedia.org/wiktionary/en/f/f5/favicon.png">
+                lemma
+            </h3>
         </div>
         <div class="panel-body">
             <h4>Noun</h4>
