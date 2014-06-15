@@ -5,7 +5,7 @@
     gone?</small></h1>
 </cfsavecontent>
 
-<div class="pull-right">
+<div class="pull-right col-sm-3">
     <div class="panel panel-info">
         <div class="panel-heading">
             <h3 class="panel-title">lemma</h3>
