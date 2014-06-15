@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6, h5 {
 }
 
 .jumbotron h1 small {
-    color: hsl(250, 30%, 70%);
+    color: hsl(250, 50%, 80%);
 }
 
 .jumbotron .container::after {
