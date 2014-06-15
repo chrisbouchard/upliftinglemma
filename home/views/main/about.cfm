@@ -10,12 +10,12 @@ Wikipedia</a>, the word <i>lemma</i> comes from the ancient Greek <i>λῆμμα
 meaning &ldquo;anything which is received, such as a gift, profit, or a
 bribe&rdquo;. A lemma is a &ldquo;stepping stone&rdquo; to a theorem &mdash;
 good lemmas lead the reader to the result, building up reasoning, so the reader
-knows how to prove the theorem before he or she even reads it.</p>
+knows the proof of the theorem before even seeing it.</p>
 
-<p>Any researcher can tell you, most lemmas are <strong>not</strong> good
+<p>Any researcher can tell you: most lemmas are <strong>not</strong> good
 lemmas.</p>
 
-<p>In a sea of lemmas, then, the <span class="upliftinglemma">Uplifting
+<p>In a sea of bad lemmas, then, the <span class="upliftinglemma">Uplifting
 Lemma</span> is more than a stepping stone; it&rsquo;s a rock to cling to as
-the tide comes in.</p>
+the tide comes in. It&rsquo;s the fact that makes things click.</p>
 
