@@ -13,11 +13,8 @@
             </h3>
         </div>
         <div class="panel-body">
-            <h4>Pronunciation</h4>
-            <p>Rhymes: -ɛmə</p>
-
             <h4>Noun</h4>
-            <p><b>lemma</b> (plural <b>lemmas</b> or <b>lemmata</b>)</p>
+            <p><b>lem·ma</b> (plural <b>lem·mas</b> or <b>lem·ma·ta</b>)</p>
             <ol>
                 <li><i>(mathematics)</i> A proposition proved or accepted for
                 immediate use in the proof of some other proposition.</li>
