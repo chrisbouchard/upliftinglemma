@@ -27,5 +27,11 @@ showed me BASIC. That stupid little black-and-white prompt changed my life,
 because by high school I had already decided that I wanted to be a professional
 programmer.</p>
 
+<p>I enjoy just about any sort of programming, but I feel I&rsquo;m most drawn
+to web programming. The World Wide Web is such an amazing platform (think about
+it for a moment: code running on my computer is sending content across the
+world to your screen). The dynamicness and flexibility of (most) web
+programming languages makes the develop-test cycle nearly painless.</p>
+
 <h2>About This Site</h2>
 
