@@ -4,6 +4,8 @@
 
 <cfparam name="local.items" type="array" default="#[]#">
 
+<cfset local.currentAction = getFullyQualifiedAction()>
+
 <cfoutput>
     <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -27,7 +29,12 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav pull-left">
                     <cfloop index="local.item" array="#local.items#">
-                        <li>
+                        <cfset local.active = "">
+                        <cfif local.item.action EQ local.currentAction>
+                            <cfset local.active = 'class="active"'
+                        </cfif>
+
+                        <li #local.active#>
                             <a href="#buildURL(local.item.action)#">
                                 #local.item.label#
                             </a>
