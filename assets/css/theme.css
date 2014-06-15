@@ -28,10 +28,10 @@ h1, h2, h3, h4, h5, h6, h5 {
 }
 
 #upliftinglemma-logo {
-    background-image: url(/assets/img/upliftinglemma_logo_white.svg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: 100% 0;
+    float: left;
+    height: 100%;
+    width: auto;
+    margin-right: 1em;
 }
 
 .upliftinglemma {
