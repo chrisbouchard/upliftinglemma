@@ -66,43 +66,41 @@
                 ]
             })#
 
-            <div id="wrapper-wrapper">
-                <div id="wrapper">
-                    <div id="content">
-                        <!--- TODO: This logic should be handled up at the top of
-                        the template. --->
-                        <cfif Len(local.layoutConfig.jumbotron)>
-                            <!-- Big header -->
-                            <header class="jumbotron striped">
-                                <div class="container">
-                                    #local.layoutConfig.jumbotron#
-                                </div>
-                            </header>
-                        </cfif>
-
-                        <div id="content-body">
+            <div id="wrapper">
+                <div id="content">
+                    <!--- TODO: This logic should be handled up at the top of
+                    the template. --->
+                    <cfif Len(local.layoutConfig.jumbotron)>
+                        <!-- Big header -->
+                        <header class="jumbotron striped">
                             <div class="container">
-                                #body#
+                                #local.layoutConfig.jumbotron#
                             </div>
+                        </header>
+                    </cfif>
+
+                    <div id="content-body">
+                        <div class="container">
+                            #body#
                         </div>
                     </div>
-
-                    <footer id="footer">
-                        <div class="container">
-                            <p>
-                                <small>
-                                    &copy; 2014 Christopher Bouchard. This work is
-                                    licensed under a
-                                    <a href="http://creativecommons.org/licenses/by/4.0/"
-                                            rel="license">
-                                        Creative Commons Attribution 4.0
-                                        International License
-                                    </a>.
-                                </small>
-                            </p>
-                        </div>
-                    </footer>
                 </div>
+
+                <footer id="footer">
+                    <div class="container">
+                        <p>
+                            <small>
+                                &copy; 2014 Christopher Bouchard. This work is
+                                licensed under a
+                                <a href="http://creativecommons.org/licenses/by/4.0/"
+                                        rel="license">
+                                    Creative Commons Attribution 4.0
+                                    International License
+                                </a>.
+                            </small>
+                        </p>
+                    </div>
+                </footer>
             </div>
         </body>
     </html>

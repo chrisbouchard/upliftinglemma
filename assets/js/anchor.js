@@ -20,4 +20,12 @@
             }
         };
     });
+
+    $('body').on('click', 'a.section-link', function (event) {
+        var offset = $(this).offset();
+        var navHeight = $('#navbar').height();
+
+        $('body').scrollTop(offset - navHeight);
+        event.preventDefault();
+    });
 })();

@@ -19,10 +19,10 @@ dl.skills-list dd {
     margin-top: 0 !important;
 }
 
-/* Since the menubar doesn't print, we can stop accounting for it. */
-#wrapper-wrapper {
-    position: static;
-    overflow: show;
+/* Since the menubar doesn't print, we can remove the padding at the top of the
+ * page. */
+#content {
+    padding-top: 0;
 }
 
 #print-warning {
