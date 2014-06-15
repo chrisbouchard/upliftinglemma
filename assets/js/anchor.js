@@ -35,7 +35,10 @@
 
         if (href.charAt(0) === '#') {
             hash = href.match(/^[^?]*/)[0];
+
+            location.hash = hash;
             scrollForHashWithNavbar(hash);
+
             event.preventDefault();
         }
     });
