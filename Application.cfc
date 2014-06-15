@@ -12,6 +12,7 @@ component extends="framework.one" output="false" accessors="true" {
         applicationKey = "UpliftingLemma",
         generateSES = true,
         SESOmitIndex = true,
+        unhandledPaths = "/assets,/flex2gateway"
 
         diEngine = "di1",
         diLocations = "controllers,model",
