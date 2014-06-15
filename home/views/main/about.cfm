@@ -47,6 +47,14 @@ lemmas.</p>
 Lemma</span> is more than a stepping stone; it&rsquo;s a rock to cling to as
 the tide comes in. It&rsquo;s the fact that makes things click.</p>
 
+<p>When I registered the domain name, I was sure that the <em>lifting
+lemma</em> was something I&rsquo;d heard about &mdash; either in an abstract
+algebra class or a Haskell blog. Looking around now, all I can find are <a
+href="http://en.wikipedia.org/wiki/Hensel%27s_lemma">Hensel&rsquo;s lifting
+lemma</a> regarding roots of polynomial equations modulo primes and <a
+href="http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/26/slides/ralf.pdf">a
+presentation</a> by a Dr. Ralf Hinze entitled <i>The Lifting Lemma</i>.
+
 
 
 <h2>About Me</h2>
