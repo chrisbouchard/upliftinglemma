@@ -97,7 +97,7 @@
             </section>
 
             <section>
-                <h2>Education <small anchor="education"></small></h2>
+                <h2 anchor="education">Education</h2>
 
                 <ul class="list-unstyled section-list">
                     <!-- PhD -->
@@ -150,9 +150,8 @@
             </section>
 
             <section toggle-hidden-group>
-                <h2>
+                <h2 anchor="career">
                     Career History
-                    <small anchor="career"></small>
                     <small class="hidden-print" toggle-hidden-switch></small>
                 </h2>
 
@@ -360,14 +359,14 @@
                 </ul>
             </section>
             <section>
-                <h2>References <small anchor="references"></small></h2>
+                <h2 anchor="references">References</h2>
                 <p>A list of references is available
                 <a href="#contact">upon request</a>.</p>
             </section>
         </div>
         <div class="col-md-6">
             <section>
-                <h2>Skills <small anchor="skills"></small></h2>
+                <h2 anchor="skills">Skills</h2>
 
                 <h4>Programming/Mark-Up Languages</h4>
                 <dl class="dl-horizontal skills-list">
@@ -396,7 +395,7 @@
             </section>
 
             <section>
-                <h2>Programming Samples <small anchor="programming"></small></h2>
+                <h2 anchor="programming">Programming Samples</h2>
 
                 <ul class="list-unstyled section-list">
                     <!-- Resume -->
@@ -478,7 +477,7 @@
             </section>
 
             <section>
-                <h2>Hobbies <small anchor="hobbies"></small></h2>
+                <h2 anchor="hobbies">Hobbies</h2>
 
                 <ul class="list-unstyled section-list">
                     <!-- GNU/Linux -->
@@ -511,7 +510,7 @@
             </section>
 
             <section>
-                <h2>Peer-Reviewed Publications <small anchor="publications"></small></h2>
+                <h2 anchor="publications">Peer-Reviewed Publications</h2>
 
                 <ul class="list-unstyled section-list">
                     <!-- Forward Closure -->
