@@ -2,8 +2,8 @@
 <cfset local.layoutConfig.title = "About">
 
 <cfsavecontent variable="local.layoutConfig.jumbotron">
-    <h1>About the Uplifting Lemma<br><small>Or, where have all the good domain names
-    gone?</small></h1>
+    <h1>About the Uplifting Lemma</h1>
+    <p>Or, where have all the good domain names gone?</p>
 </cfsavecontent>
 
 <div class="pull-right col-sm-4">
