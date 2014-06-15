@@ -1,4 +1,5 @@
 <cfparam name="local.name" type="string" default="Uplifting Lemma">
+<cfparam name="local.id" type="string" default="navbar">
 <cfparam name="local.action" type="string" default="home:main.default">
 <cfparam name="local.iconClass" type="string" default="fa fa-certificate">
 
@@ -7,7 +8,8 @@
 <cfset local.currentAction = getFullyQualifiedAction()>
 
 <cfoutput>
-    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top"
+            id="#local.id#">
         <div class="container">
 
             <div class="navbar-header pull-left">
