@@ -89,7 +89,7 @@
             </section>
 
             <section>
-                <h2>Timeline <small anchor="timeline"></small></h2>
+                <h2 anchor="timeline">Timeline</h2>
 
                 <div cb-timeline="education, career"
                         data-group-classes="{'education': 'education-bar', 'career': 'career-bar'}">

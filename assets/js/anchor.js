@@ -17,8 +17,9 @@
                     link.attr('href', '#' + value);
                 });
 
-                element.wrapAll(anchor);
                 element.append(link);
+                element.before(anchor);
+                anchor.append(element);
             }
         };
     });
