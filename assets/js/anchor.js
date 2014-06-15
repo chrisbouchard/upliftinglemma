@@ -22,6 +22,13 @@
     });
 
     $(function () {
+        function scrollForHashWithNavbar(hash) {
+            offset = $(hash).offset().top;
+            navHeight = $('#navbar').height();
+
+            $(window).scrollTop(offset - navHeight);
+        }
+
         $(document).on('click', 'a', function (event) {
             var hash;
             var offset;
@@ -31,12 +38,13 @@
 
             if (href.charAt(0) === '#') {
                 hash = href.match(/^[^?]*/)[0];
-                offset = $(hash).offset().top;
-                navHeight = $('#navbar').height();
-
-                $(window).scrollTop(offset - navHeight);
+                scrollForHashWithNavbar(hash);
                 event.preventDefault();
             }
         });
+
+        if (location.hash.length !== 0) {
+            scrollForHashWithNavbar(location.hash);
+        }
     });
 })();
