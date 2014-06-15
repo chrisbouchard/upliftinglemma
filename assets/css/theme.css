@@ -23,6 +23,12 @@ h1, h2, h3, h4, h5, h6, h5 {
     height: auto;
 }
 
+.upliftinglemma {
+    color: hsl(250, 60%, 40%);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
 .jumbotron {
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
