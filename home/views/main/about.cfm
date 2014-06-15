@@ -31,7 +31,17 @@ programmer.</p>
 to web programming. The World Wide Web is such an amazing platform (think about
 it for a moment: code running on my computer is sending content across the
 world to your screen). The dynamicness and flexibility of (most) web
-programming languages makes the develop-test cycle nearly painless.</p>
+programming languages makes development quick and fun.</p>
 
 <h2>About This Site</h2>
+
+<p><span class="upliftinglemma">Uplifting Lemma</span> is, first and foremost,
+an experiment. It exists to play around with whatever frameworks and libraries
+interest me.
+
+The site is built on the <a href="https://github.com/framework-one/fw1">FW/1
+framework</a>, running on <a href="http://www.getrailo.org/">Railo</a>.
+I&rsquo;ve used ColdFusion for a while now in my day job, and CFML is a quick
+and easy language to use. The theme is built using <a
+href="http://getbootstrap.com/">Bootstrap</a>.
 
