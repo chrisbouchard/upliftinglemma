@@ -16,6 +16,6 @@ knows how to prove the theorem before he or she even reads it.</p>
 lemmas.</p>
 
 <p>In a sea of lemmas, then, the <span class="upliftinglemma">Uplifting
-Lemma</span> is more than a stepping stone; it is a rock to cling to as the
-tide comes in.</p>
+Lemma</span> is more than a stepping stone; it&rsquo;s a rock to cling to as
+the tide comes in.</p>
 
