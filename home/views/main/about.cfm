@@ -9,11 +9,13 @@
     <div class="panel panel-info">
         <div class="panel-heading">
             <h3 class="panel-title">
-                <i class="fa fa-book"></i>
-                lemma
+                <i class="fa fa-info-circle"></i> lemma
             </h3>
         </div>
         <div class="panel-body">
+            <h4>Pronunciation</h4>
+            <p>Rhymes: -ɛmə</p>
+
             <h4>Noun</h4>
             <p><b>lemma</b> (plural <b>lemmas</b> or <b>lemmata</b>)</p>
             <ol>
