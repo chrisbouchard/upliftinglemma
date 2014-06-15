@@ -23,17 +23,14 @@
 
     $(function () {
         function scrollForHashWithNavbar(hash) {
-            offset = $(hash).offset().top;
-            navHeight = $('#navbar').height();
+            var offset = $(hash).offset().top;
+            var navHeight = $('#navbar').height();
 
             $(window).scrollTop(offset - navHeight);
         }
 
         $(document).on('click', 'a', function (event) {
             var hash;
-            var offset;
-            var navHeight;
-
             var href = $(this).attr('href');
 
             if (href.charAt(0) === '#') {
