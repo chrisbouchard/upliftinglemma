@@ -46,5 +46,7 @@ I&rsquo;ve used ColdFusion for a while now in my day job, and CFML is a quick
 and easy language to use. The theme is built using <a
 href="http://getbootstrap.com/">Bootstrap</a>. The interactive components were
 built using <a href="http://jquery.com/">jQuery</a> and <a
-href="https://angularjs.org/">Angular.js</a>.</p>
+href="https://angularjs.org/">Angular.js</a>. It took me a while to wrap my
+head around Angular.js. Now either the madness is setting in or I&rsquo;m
+beginning to understand how it&rsquo;s meant to work.</p>
 
