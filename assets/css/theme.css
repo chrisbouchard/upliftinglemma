@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, h5 {
 }
 
 .upliftinglemma {
-    color: hsl(250, 60%, 40%);
+    color: hsl(240, 50%, 60%);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
