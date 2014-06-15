@@ -5,5 +5,8 @@
     gone?</small></h1>
 </cfsavecontent>
 
-<img src="/assets/img/upliftinglemma_logo.svg" class="img-responsive">
+<a href="http://en.wikipedia.org/wiki/Lemma_(mathematics)">According to
+Wikipedia</a>, the word <i>lemma</i> comes from the ancient Greek <i>λῆμμα</i>,
+meaning &ldquo;anything which is received, such as a gift, profit, or a
+bribe&rsquo;.
 
