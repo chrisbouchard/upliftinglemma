@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6, h5 {
     width: 16px;
     height: 16px;
     background-image: url(http://upload.wikimedia.org/wiktionary/en/f/f5/favicon.png);
+    background-size: 100% 100%;
 }
 
 .jumbotron {
