@@ -23,13 +23,15 @@
 
     $(function () {
         $(document).on('click', 'a', function (event) {
+            var hash;
             var offset;
             var navHeight;
 
             var href = $(this).attr('href');
 
             if (href.charAt(0) === '#') {
-                offset = $(this).offset().top;
+                hash = href.match(/^[^?]*/)[0];
+                offset = $(hash).offset().top;
                 navHeight = $('#navbar').height();
 
                 $(window).scrollTop(offset - navHeight);
