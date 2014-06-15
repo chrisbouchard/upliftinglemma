@@ -33,14 +33,6 @@ h1, h2, h3, h4, h5, h6, h5 {
     font-weight: bold;
 }
 
-.wiktionary-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-image: url(http://upload.wikimedia.org/wiktionary/en/f/f5/favicon.png);
-    background-size: 100% 100%;
-}
-
 .jumbotron {
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
