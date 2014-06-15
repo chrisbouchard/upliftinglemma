@@ -28,7 +28,7 @@
         $(window).scrollTop(offset - navHeight);
     }
 
-    $(document).on('click', 'a', function (event) {
+    $(document.body).on('click', 'a', function (event) {
         var hash;
         var href = $(this).attr('href');
 
@@ -39,7 +39,7 @@
         }
     });
 
-    $(document).on('load', function (event) {
+    $(document.body).on('load', function (event) {
         if (location.hash.length !== 0) {
             scrollForHashWithNavbar(location.hash);
         }
