@@ -18,6 +18,12 @@
     <cfif Len(local.layoutConfig.title)>
         <cfset local.title = "<title>" & local.layoutConfig.title & "</title>">
     </cfif>
+
+    <cfset local.showJumbotron = false>
+
+    <cfif Len(local.layoutConfig.jumbotron)>
+        <cfset local.showJumbotron = true>
+    </cfif>
 </cfsilent>
 
 <cfoutput>
@@ -70,7 +76,7 @@
                 <div id="content">
                     <!--- TODO: This logic should be handled up at the top of
                     the template. --->
-                    <cfif Len(local.layoutConfig.jumbotron)>
+                    <cfif Len(local.showJumbotron)>
                         <!-- Big header -->
                         <header class="jumbotron striped">
                             <div class="container">
