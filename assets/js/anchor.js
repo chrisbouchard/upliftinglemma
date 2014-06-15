@@ -7,19 +7,17 @@
                 'anchor': '@'
             },
             link : function (scope, element, attrs) {
-                var anchor = $('<a></a>');
                 var link = $('<a><span class="fa fa-link"></span></a>');
 
                 link.addClass('section-link');
 
                 scope.$watch('anchor', function (value) {
-                    anchor.attr('id', value);
+                    element.attr('id', value);
                     link.attr('href', '#' + value);
                 });
 
+                element.append('&nbsp;');
                 element.append(link);
-                element.before(anchor);
-                anchor.append(element);
             }
         };
     });
