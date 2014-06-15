@@ -8,7 +8,10 @@
 <div class="pull-right col-sm-4">
     <div class="panel panel-info">
         <div class="panel-heading">
-            <h3 class="panel-title">lemma</h3>
+            <h3 class="panel-title">
+                <i class="fa fa-book"></i>
+                lemma
+            </h3>
         </div>
         <div class="panel-body">
             <h4>Noun</h4>
