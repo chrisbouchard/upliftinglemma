@@ -6,10 +6,11 @@ html, body {
 
 #wrapper-wrapper {
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 0;
     bottom: 0;
     left: 0;
+    overflow: scroll;
 }
 
 #wrapper {
@@ -18,7 +19,7 @@ html, body {
 }
 
 #content {
-    padding: 50px 0 3em 0;
+    padding: 0 0 3em 0;
 }
 
 #footer {
