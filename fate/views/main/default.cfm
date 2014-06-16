@@ -18,14 +18,16 @@
                     <input type="password" class="form-control" id="login-password"
                             name="password" placeholder="Password">
                 </div>
-                <button type="submit" id="login-submit-login" name="submit"
-                        class="btn btn-primary">
-                    Log In
-                </button>
-                <button type="submit" id="login-submit-create" name="submit"
-                        class="btn btn-default">
-                    Sign Up
-                </button>
+                <div class="row">
+                    <button type="submit" id="login-submit-login" name="submit"
+                            class="btn btn-primary col-xs-6">
+                        Log In
+                    </button>
+                    <button type="submit" id="login-submit-create" name="submit"
+                            class="btn btn-default col-xs-6">
+                        Sign Up
+                    </button>
+                </div>
             </form>
         </div>
     </div>
