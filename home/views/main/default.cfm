@@ -1,8 +1,11 @@
 <cfset local.layoutConfig = getRCValue("layoutConfig")>
 
 <cfsavecontent variable="local.layoutConfig.jumbotron">
-    <img id="upliftinglemma-logo" src="/assets/img/upliftinglemma_logo_white.svg">
-    <h1>Uplifting Lemma</h1>
+    <h1>
+        <img src="/assets/img/upliftinglemma_logo_white.svg"
+                id="upliftinglemma-logo">
+        Uplifting Lemma
+    </h1>
     <p>A assortment of all sorts of projects that <em>sort of</em> work</p>
 </cfsavecontent>
 
