@@ -28,8 +28,11 @@ h1, h2, h3, h4, h5, h6, h5 {
 }
 
 #upliftinglemma-logo {
-    height: 1em;
+    float: left;
+    height: 100px;
     width: auto;
+    margin-top: 20px;
+    margin-right: 1em;
 }
 
 .upliftinglemma {
