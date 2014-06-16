@@ -2,7 +2,7 @@ component output="false" accessors="true" {
     property framework;
 
     function before(rc) {
-        if (framework.getItem() NE "login") {
+        if (framework.getItem() NEQ "login") {
             framework.redirect("main.login");
         }
     }
