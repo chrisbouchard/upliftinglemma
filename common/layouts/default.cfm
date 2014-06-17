@@ -55,6 +55,9 @@
             <!-- Datejs -->
             <script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
+            <!-- Google+ API -->
+            <script src="https://apis.google.com/js/client:plusone.js"></script>
+
             <!-- Local -->
             <link rel="stylesheet" href="/assets/css/print.css" media="print">
             <link rel="stylesheet" href="/assets/css/structure.css">
