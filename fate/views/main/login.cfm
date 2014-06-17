@@ -42,7 +42,7 @@
     <div class="text-center">
         <span class="g-signin" data-callback="gSigninCallback"
                 data-width="wide"
-                data-clientid="AIzaSyAbIhwdrdIInUSfTyggdHwgWvM3G0hgbTE"
+                data-clientid="379488486717-bacsevij42j2dbel1u94r971gl1vo81j.apps.googleusercontent.com"
                 data-cookiepolicy="single_host_origin"
                 data-scope="https://www.googleapis.com/auth/plus.login">
         </span>
