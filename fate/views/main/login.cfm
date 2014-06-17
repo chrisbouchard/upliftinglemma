@@ -5,6 +5,7 @@
     <p>Create and manage your FATE character sheets.<p>
     <br>
 
+    <!---
     <div class="row">
         <div class="col-sm-offset-3 col-sm-6">
             <form role="form">
@@ -35,6 +36,15 @@
                 </div>
             </form>
         </div>
+    </div>
+    --->
+
+    <div class="text-center">
+        <span class="g-signin" data-callback="gSigninCallback"
+                data-width="wide" data-clientid="379488486717"
+                data-cookiepolicy="single_host_origin"
+                data-scope="https://www.googleapis.com/auth/plus.login">
+        </span>
     </div>
 </cfsavecontent>
 
