@@ -57,9 +57,6 @@
             <!-- Datejs -->
             <script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
-            <!-- Google+ API -->
-            <script src="https://apis.google.com/js/client:plusone.js"></script>
-
             <!-- Google+ Signin Directive -->
             <script src="/assets/js/google-plus-signin.js"></script>
 
