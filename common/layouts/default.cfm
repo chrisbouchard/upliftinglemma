@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <cfsilent>
-    <cfset local.layoutConfig = getRCValue("layoutConfig")>
+    <cfset local.lc = getRCValue("layoutConfig")>
 
+    <!---
     <cfset local.ngApp = "">
     <cfset local.ngController = "">
     <cfset local.title = "">
@@ -24,10 +25,11 @@
     <cfif Len(local.layoutConfig.jumbotron)>
         <cfset local.showJumbotron = true>
     </cfif>
+    --->
 </cfsilent>
 
 <cfoutput>
-    <html xmlns:ng="http://angularjs.org" id="ng-app" #local.ngApp#>
+    <html xmlns:ng="http://angularjs.org" id="ng-app" #local.lc.asAttribute("app", "ng-app")#>
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,17 +60,20 @@
             <!-- Google+ API -->
             <script src="https://apis.google.com/js/client:plusone.js"></script>
 
+            <!-- Google+ Signin Directive -->
+            <script src="/assets/js/google-plus-signin.js"></script>
+
             <!-- Local -->
             <link rel="stylesheet" href="/assets/css/print.css" media="print">
             <link rel="stylesheet" href="/assets/css/structure.css">
             <link rel="stylesheet" href="/assets/css/theme.css">
             <link rel="stylesheet" href="/assets/css/typography.css">
 
-            #local.layoutConfig.head#
+            #local.lc.render("head")#
         </head>
 
         <body #local.ngController#>
-            #view("common:main/navbar", {
+            #view("common:layout/navbar", {
                 items = [
                     { action = "home:main.about", label = "About" },
                     { action = "fate:main.default", label = "Fate" },
@@ -78,16 +83,20 @@
 
             <div id="wrapper">
                 <div id="content">
+                    #local.lc.render("jumbotron")#
+
                     <!--- TODO: This logic should be handled up at the top of
                     the template. --->
+                    <!---
                     <cfif Len(local.showJumbotron)>
                         <!-- Big header -->
                         <header class="jumbotron striped">
                             <div class="container">
-                                #local.layoutConfig.jumbotron#
+                                #local.render.jumbotron#
                             </div>
                         </header>
                     </cfif>
+                    --->
 
                     <div id="content-body">
                         <div class="container">

@@ -1,7 +1,5 @@
 component extends="framework.one" output="false" accessors="true" {
 
-    property layoutConfig;
-
     /* Set up session management. */
     this.sessionManagement = true;
     this.name = "UpliftingLemma";
@@ -32,9 +30,9 @@ component extends="framework.one" output="false" accessors="true" {
         return "dev";
     }
 
-    /* Set up the layout struct so views can communicate with the layout. */
+    /* Set up a layout config object so views can communicate with layouts. */
     function setupView(rc) output="false" {
-        rc.layoutConfig = layoutConfig.newConfig();
+        rc.layoutConfig = getBeanFactory.getBean("layoutConfigBean");
     }
 
 }
