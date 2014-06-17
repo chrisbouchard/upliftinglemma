@@ -69,7 +69,7 @@
             <link rel="stylesheet" href="/assets/css/theme.css">
             <link rel="stylesheet" href="/assets/css/typography.css">
 
-            #local.lc.render("head")#
+            #local.lc.render(item="head", ignoreMissing=true)#
         </head>
 
         <body #local.lc.asAttribute("controller", "ng-controller")#>

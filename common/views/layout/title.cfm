@@ -1,4 +1,8 @@
+<cfif Len(local.value)>
+    <cfset local.value = "&mdash; " & local.value>
+</cfif>
+
 <cfoutput>
-    <title>#local.value#</title>
+    <title>Uplifting Lemma #local.value#</title>
 </cfoutput>
 

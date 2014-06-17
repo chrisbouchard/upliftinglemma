@@ -1,10 +1,12 @@
-<cfset local.layoutConfig = getRCValue("layoutConfig")>
-<cfset local.layoutConfig.title = "About">
+<cfset local.lc = getRCValue("layoutConfig")>
+<cfset local.lc.set("title", "About")>
 
-<cfsavecontent variable="local.layoutConfig.jumbotron">
+<cfsavecontent variable="local.jumbotronContent">
     <h1>About the Uplifting Lemma</h1>
     <p>Or, where have all the good domain names gone?</p>
 </cfsavecontent>
+
+<cfset local.lc.set("jumbotron", local.jumbotronContent)>
 
 <div class="pull-right col-sm-4">
     <div class="panel panel-info">
