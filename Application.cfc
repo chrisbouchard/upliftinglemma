@@ -31,12 +31,16 @@ component extends="framework.one" output="false" accessors="true" {
     }
 
     function setupRequest() output="false" {
-        enableFrameworkTrace();
+        this.enableFrameworkTrace();
     }
 
     /* Set up a layout config object so views can communicate with layouts. */
     function setupView(rc) output="false" {
-        rc.layoutConfig = getBeanFactory().getBean("layoutConfigBean");
+        var bf = this.getBeanFactory();
+
+        rc.layoutConfig = bf.injectProperties("layoutConfigBean", {
+            framework = this
+        });
     }
 
 }
