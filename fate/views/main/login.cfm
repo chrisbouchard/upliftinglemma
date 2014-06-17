@@ -41,7 +41,8 @@
 
     <div class="text-center">
         <span class="g-signin" data-callback="gSigninCallback"
-                data-width="wide" data-clientid="379488486717"
+                data-width="wide"
+                data-clientid="379488486717-9k4hmbk10g6ecs96mkcmbnimeq5svsjc.apps.googleusercontent.com"
                 data-cookiepolicy="single_host_origin"
                 data-scope="https://www.googleapis.com/auth/plus.login">
         </span>
