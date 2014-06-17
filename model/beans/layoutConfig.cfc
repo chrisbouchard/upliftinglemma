@@ -63,30 +63,5 @@ component output="false" accessors="true" {
         return attr & '="' & this.get(item) & '"';
     }
 
-
-    public any function OnMissingMethod( required string MissingMethodName,
-                                         required struct MissingMethodArguments
-                                       ) output=false {
-        var item = "";
-
-        framework.frameworkTrace("MissingMethodName", MissingMethodName);
-        framework.frameworkTrace("MissingMethodArguments", MissingMethodArguments);
-
-        if (FindNoCase("get", MissingMethodName) EQ 1) {
-            item = Right(MissingMethodName, Len(MissingMethodName) - 3);
-            return this.get(item);
-        }
-
-        if (FindNoCase("set", MissingMethodName) EQ 1 AND
-                StructKeyExists(MissingMethodArguments, "1")) {
-            item = Right(MissingMethodName, Len(MissingMethodName) - 3);
-            return this.set(item, MissingMethodArguments["1"]);
-        }
-    }
-
-    public void function dump() {
-        dump(variables.config);
-    }
-
 }
 
