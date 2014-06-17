@@ -23,8 +23,8 @@
     </h1>
 </cfsavecontent>
 
-<cfset local.lc.add("head", local.headContent);
-<cfset local.lc.set("jumbotron", local.jumbotronContent);
+<cfset local.lc.add("head", local.headContent)>
+<cfset local.lc.set("jumbotron", local.jumbotronContent)>
 
 <div class="clearfix"></div>
 
