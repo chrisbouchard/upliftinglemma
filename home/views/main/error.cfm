@@ -1,6 +1,3 @@
-<cfset local.lc = getRCValue("layoutConfig")>
-<cfset local.lc.set("title", "ERROR!")>
-
 <h1>ERROR! <small>An error occurred!</small></h1>
 
 <cfoutput>
