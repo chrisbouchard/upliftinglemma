@@ -35,7 +35,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            #local.lc.render("title", ignoreMissing=true)#
+            #local.lc.render(item="title", ignoreMissing=true)#
 
             <!-- jQuery -->
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -69,7 +69,7 @@
             <link rel="stylesheet" href="/assets/css/theme.css">
             <link rel="stylesheet" href="/assets/css/typography.css">
 
-            #local.lc.get(item="head")#
+            #local.lc.get("head")#
         </head>
 
         <body #local.lc.asAttribute("controller", "ng-controller")#>
