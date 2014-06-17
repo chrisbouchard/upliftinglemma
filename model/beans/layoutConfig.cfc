@@ -69,12 +69,12 @@ component output="false" accessors="true" {
                                        ) output=false {
         var item = "";
 
-        if (Find("get", MissingMethodName) EQ 1) {
+        if (FindNoCase("get", MissingMethodName) EQ 1) {
             item = Right(MissingMethodName, Len(MissingMethodName) - 3);
             return this.get(item);
         }
 
-        if (Find("set", MissingMethodName) EQ 1 AND
+        if (FindNoCase("set", MissingMethodName) EQ 1 AND
                 StructKeyExists(MissingMethodArguments, "1")) {
             item = Right(MissingMethodName, Len(MissingMethodName) - 3);
             return this.set(item, MissingMethodArguments["1"]);
