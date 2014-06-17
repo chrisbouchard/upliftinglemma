@@ -81,5 +81,9 @@ component output="false" accessors="true" {
         }
     }
 
+    public void function dump() {
+        dump(variables.config);
+    }
+
 }
 

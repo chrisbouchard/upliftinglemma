@@ -101,6 +101,7 @@
                     <div id="content-body">
                         <div class="container">
                             #body#
+                            <cfset local.lc.dump()>
                         </div>
                     </div>
                 </div>
