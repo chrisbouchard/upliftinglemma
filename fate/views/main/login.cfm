@@ -1,5 +1,9 @@
 <cfset local.layoutConfig = getRCValue("layoutConfig")>
 
+<cfsavecontent variable="local.layoutConfig.head">
+    <script src="/assets/js/google.js"></script>
+</cfsavecontent>
+
 <cfsavecontent variable="local.layoutConfig.jumbotron">
     <h1>FATE Character Database</h1>
     <p>Create and manage your FATE character sheets.<p>
@@ -41,7 +45,7 @@
 
     <div class="text-center">
         <span class="g-signin" data-callback="gSigninCallback"
-                data-width="wide"
+                data-height="tall" data-width="wide"
                 data-clientid="379488486717-bacsevij42j2dbel1u94r971gl1vo81j.apps.googleusercontent.com"
                 data-cookiepolicy="single_host_origin"
                 data-scope="https://www.googleapis.com/auth/plus.login">
