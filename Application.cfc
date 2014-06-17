@@ -30,6 +30,10 @@ component extends="framework.one" output="false" accessors="true" {
         return "dev";
     }
 
+    function setupRequest() output="false" {
+        enableFrameworkTrace();
+    }
+
     /* Set up a layout config object so views can communicate with layouts. */
     function setupView(rc) output="false" {
         rc.layoutConfig = getBeanFactory().getBean("layoutConfigBean");

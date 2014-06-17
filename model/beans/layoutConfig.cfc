@@ -69,6 +69,9 @@ component output="false" accessors="true" {
                                        ) output=false {
         var item = "";
 
+        framework.frameworkTrace("MissingMethodName", MissingMethodName);
+        framework.frameworkTrace("MissingMethodArguments", MissingMethodArguments);
+
         if (FindNoCase("get", MissingMethodName) EQ 1) {
             item = Right(MissingMethodName, Len(MissingMethodName) - 3);
             return this.get(item);
