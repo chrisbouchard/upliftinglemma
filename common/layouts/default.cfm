@@ -35,7 +35,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            #local.title#
+            #local.lc.render("title")#
 
             <!-- jQuery -->
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -72,7 +72,7 @@
             #local.lc.render("head")#
         </head>
 
-        <body #local.ngController#>
+        <body #local.lc.asAttribute("controller", "ng-controller")#>
             #view("common:layout/navbar", {
                 items = [
                     { action = "home:main.about", label = "About" },
