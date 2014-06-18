@@ -1,8 +1,10 @@
-<cfset local.lc = getRCValue("layoutConfig")>
+<cfset local.contentHooks = getRCValue("contentHooks")>
+<cfset local.contentHooks.title = "Login">
 
-<cfsavecontent variable="local.jumbotronContent">
-    <h1>FATE Character Database</h1>
-    <p>Create and manage your FATE character sheets.<p>
+<cfsavecontent variable="local.contentHooks.jumbotron">
+    <h1>Uplifting Lemma</h1>
+    <p>Log in to witness the <em>power</em> of this fully armed and &hellip;
+    Well, just log in.<p>
     <br>
 
     <div class="text-center" controller="cbGPlusController">
@@ -18,6 +20,4 @@
         <google-plus-signin clientid="" language="en"></google-plus-signin>
     </div>
 </cfsavecontent>
-
-<cfset local.lc.set("jumbotron", local.jumbotronContent)>
 
