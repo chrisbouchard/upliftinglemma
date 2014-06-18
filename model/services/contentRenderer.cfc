@@ -26,7 +26,7 @@ component output=false accessors=true {
             }
 
             /* If we have a render method for this key, use it. */
-            if (StructKeyExists(this, "render#key#") {
+            if (StructKeyExists(this, "render#key#")) {
                 value = this["render#key#"](value, args);
             }
 
