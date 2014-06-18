@@ -1,4 +1,4 @@
-component extends="framework.one" output="false" accessors="true" {
+component extends="framework.one" output=false accessors=true {
 
     property contentRenderer;
 
@@ -28,26 +28,28 @@ component extends="framework.one" output="false" accessors="true" {
      * set-up that needs its own configuration should instead get its own
      * environment. For now, we can figure out the environment based on the
      * hostname (specifically the server name). */
-    public string function getEnvironment() output="false" {
+    public string function getEnvironment() output=false {
         return "dev";
     }
 
-    public void function before(required struct rc) output="false" {
+    public void function setupRequest() output=false {
         this.enableFrameworkTrace();
-
-        /* Get ready to render some content! This allows views to attach
-         * content to "hooks", which the layout can look for and render. */
-        rc.contentRenderer = contentRenderer;
-        rc.contentHooks = {};
     }
 
     /* Set up a layout config object so views can communicate with layouts. */
-    public void function setupView(required struct rc) output="false" {
+    public void function setupView(required struct rc) output=false {
         var bf = this.getBeanFactory();
 
         rc.layoutConfig = bf.injectProperties("layoutConfigBean", {
             framework = this
         });
+    }
+
+    public void function before(required struct rc) output=false {
+        /* Get ready to render some content! This allows views to attach
+         * content to "hooks", which the layout can look for and render. */
+        rc.contentRenderer = contentRenderer;
+        rc.contentHooks = {};
     }
 
 }
