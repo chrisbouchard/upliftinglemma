@@ -17,7 +17,9 @@
         </span>
         --->
 
-        <google-plus-signin clientid="" language="en"></google-plus-signin>
+        <google-plus-signin clientid="" data-width="wide" data-height="tall"
+                data-redirecturi="/login/auth" data-accesstype="offline">
+        </google-plus-signin>
     </div>
 </cfsavecontent>
 
