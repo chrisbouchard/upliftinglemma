@@ -19,6 +19,5 @@
     </div>
 </cfsavecontent>
 
-<cfset local.lc.add("head", local.headContent)>
 <cfset local.lc.set("jumbotron", local.jumbotronContent)>
 
