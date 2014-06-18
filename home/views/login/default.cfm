@@ -3,8 +3,8 @@
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
     <h1>Uplifting Lemma</h1>
-    <p>Log in to witness the <em>power</em> of this fully armed and &hellip;
-    Well, just log in.<p>
+    <p>Log in to witness the <em>power</em> of this fully armed and&hellip;
+    <small>Just log in.</small><p>
     <br>
 
     <div class="text-center" controller="cbGPlusController">
