@@ -1,9 +1,5 @@
 <cfset local.lc = getRCValue("layoutConfig")>
 
-<cfsavecontent variable="local.headContent">
-    <script src="/assets/js/google.js"></script>
-</cfsavecontent>
-
 <cfsavecontent variable="local.jumbotronContent">
     <h1>FATE Character Database</h1>
     <p>Create and manage your FATE character sheets.<p>
