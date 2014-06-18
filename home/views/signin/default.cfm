@@ -1,10 +1,10 @@
 <cfset local.contentHooks = getRCValue("contentHooks")>
-<cfset local.contentHooks.title = "Login">
+<cfset local.contentHooks.title = "Sign In">
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
     <h1>Uplifting Lemma</h1>
-    <p>Log in to witness the <em>power</em> of this fully armed and op&hellip;
-    &emsp; <small>Well, just log in.</small><p>
+    <p>Sign in to witness the <em>power</em> of this fully armed and op&hellip;
+    &emsp; <small>Well, just sign in.</small><p>
 </cfsavecontent>
 
 <div class="row">
@@ -15,9 +15,9 @@
         </google-plus-signin>
     </div>
     <div class="col-sm-8">
-        <p>Log in with Google+. In the future, I will try to offer other log in
-        options, such as Facebook and Twitter. Each one seems to have its own
-        quirks, though, so one at a time.</p>
+        <p>Sign in with Google+. In the future, I will try to offer other sign
+        in options, such as Facebook and Twitter. Each one seems to have its
+        own quirks, though, so one at a time.</p>
     </div>
 </div>
 

@@ -46,8 +46,8 @@
 
                 <ul class="nav navbar-nav pull-right">
                     <li>
-                        <a href="#buildURL("home:login.default")#">
-                            Log In
+                        <a href="#buildURL("home:signin.default")#">
+                            Sign In
                         </a>
                     </li>
                 </ul>
