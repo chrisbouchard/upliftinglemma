@@ -1,7 +1,7 @@
 component output="false" accessors="true" {
     property framework;
 
-    public void default( required struct rc ) output=false {
+    public void function default( required struct rc ) output=false {
     }
 
 }
