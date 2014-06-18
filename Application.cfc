@@ -33,7 +33,11 @@ component extends="framework.one" output=false accessors=true {
     }
 
     public void function setupRequest() output=false {
-        this.enableFrameworkTrace();
+        /* If tracing has been requested, enable it. This will need to be
+         * locked down before we hit production. */
+        if (StructKeyExists(url, "trace") AND url.trace) {
+            this.enableFrameworkTrace();
+        }
 
         /* The content renderer needs to know about the framework to render
          * views. It's generally considered bad practice for services to know
