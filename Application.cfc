@@ -39,7 +39,7 @@ component extends="framework.one" output=false accessors=true {
          * views. It's generally considered bad practice for services to know
          * about the framework, but I think this is better than the
          * alternatives. */
-        this.getBeanFactory().inject("contentRendererService", {
+        this.getBeanFactory().injectProperties("contentRendererService", {
             framework = this
         });
     }
