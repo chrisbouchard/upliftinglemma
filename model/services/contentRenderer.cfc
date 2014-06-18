@@ -41,6 +41,8 @@ component output=false accessors=true {
 
             output[key] = value;
         }
+
+        return output;
     }
 
 
