@@ -1,6 +1,6 @@
 component extends="framework.one" output=false accessors=true {
 
-    property contentRenderer;
+    property contentRendererService;
 
     /* Set up session management. */
     this.sessionManagement = true;
@@ -34,13 +34,12 @@ component extends="framework.one" output=false accessors=true {
 
     public void function setupRequest() output=false {
         this.enableFrameworkTrace();
-    }
 
-    /* Set up a layout config object so views can communicate with layouts. */
-    public void function setupView(required struct rc) output=false {
-        var bf = this.getBeanFactory();
-
-        rc.layoutConfig = bf.injectProperties("layoutConfigBean", {
+        /* The content renderer needs to know about the framework to render
+         * views. It's generally considered bad practice for services to know
+         * about the framework, but I think this is better than the
+         * alternatives. */
+        this.getBeanFactory().inject("contentRendererService", {
             framework = this
         });
     }
@@ -48,7 +47,7 @@ component extends="framework.one" output=false accessors=true {
     public void function before(required struct rc) output=false {
         /* Get ready to render some content! This allows views to attach
          * content to "hooks", which the layout can look for and render. */
-        rc.contentRenderer = contentRenderer;
+        rc.contentRenderer = contentRendererService;
         rc.contentHooks = {};
         rc.contentArgs = {};
     }
