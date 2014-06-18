@@ -49,7 +49,6 @@
 
             <!-- Local JavaScript -->
             <script src="/assets/js/upliftinglemma-app.js"></script>
-            <script src="/assets/js/resume-app.js"></script>
 
             <!-- Local Style -->
             <link rel="stylesheet" href="/assets/css/print.css" media="print">
