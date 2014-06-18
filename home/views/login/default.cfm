@@ -1,10 +1,10 @@
-<cfset local.layoutConfig = getRCValue("layoutConfig")>
+<cfset local.lc = getRCValue("layoutConfig")>
 
-<cfsavecontent variable="local.layoutConfig.head">
+<cfsavecontent variable="local.headContent">
     <script src="/assets/js/google.js"></script>
 </cfsavecontent>
 
-<cfsavecontent variable="local.layoutConfig.jumbotron">
+<cfsavecontent variable="local.jumbotronContent">
     <h1>FATE Character Database</h1>
     <p>Create and manage your FATE character sheets.<p>
     <br>
@@ -22,4 +22,7 @@
         <google-plus-signin clientid="" language="en"></google-plus-signin>
     </div>
 </cfsavecontent>
+
+<cfset local.lc.add("head", local.headContent)>
+<cfset local.lc.set("jumbotron", local.jumbotronContent)>
 
