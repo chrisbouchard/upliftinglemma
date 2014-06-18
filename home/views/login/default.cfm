@@ -3,7 +3,7 @@
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
     <h1>Uplifting Lemma</h1>
-    <p>Log in to witness the <em>power</em> of this fully armed and&hellip;
+    <p>Log in to witness the <em>power</em> of this fully armed and &hellip;
     &emsp; <small>Just log in.</small><p>
     <br>
 
