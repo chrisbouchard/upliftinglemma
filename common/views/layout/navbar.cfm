@@ -43,6 +43,14 @@
                         </li>
                     </cfloop>
                 </ul>
+
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="#buildURL("home:login.default")#">
+                            Log In
+                        </a>
+                    </li>
+                </ul>
             </div>
 
         </div>
