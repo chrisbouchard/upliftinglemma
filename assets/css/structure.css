@@ -34,11 +34,3 @@ html, body {
     margin-bottom: 15px;
 }
 
-/* For small devices and up. */
-@media(min-width:768px) {
-    #content-body {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-

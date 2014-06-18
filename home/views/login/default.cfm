@@ -20,13 +20,13 @@
 </cfsavecontent>
 
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-4">
         <google-plus-signin data-width="wide" data-height="tall"
                 clientid="379488486717-bacsevij42j2dbel1u94r971gl1vo81j"
                 data-redirecturi="/login/auth" data-accesstype="offline">
         </google-plus-signin>
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-8">
         <p>Log in with Google+. In the future, I will try to offer other log in
         options, such as Facebook and Twitter. Each one seems to have its own
         quirks, though, so one at a time.</p>
