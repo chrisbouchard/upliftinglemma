@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 
 <cfsilent>
-    <cfset local.lc = getRCValue("layoutConfig")>
+    <cfset local.contentRenderer = getRCValue("contentRenderer")>
+    <cfset local.contentHooks = getRCValue("contentHooks")>
+    <cfset local.contentArgs = getRCValue("contentArgs")>
 
-    <!---
-    <cfset local.ngApp = "">
-    <cfset local.ngController = "">
-    <cfset local.title = "">
-
-    <cfif Len(local.layoutConfig.app)>
-        <cfset local.ngApp = 'ng-app="' & local.layoutConfig.app & '"'>
-    </cfif>
-
-    <cfif Len(local.layoutConfig.controller)>
-        <cfset local.ngController = 'ng-controller="' & local.layoutConfig.controller & '"'>
-    </cfif>
-
-    <cfif Len(local.layoutConfig.title)>
-        <cfset local.title = "<title>" & local.layoutConfig.title & "</title>">
-    </cfif>
-
-    <cfset local.showJumbotron = false>
-
-    <cfif Len(local.layoutConfig.jumbotron)>
-        <cfset local.showJumbotron = true>
-    </cfif>
-    --->
+    <cfset local.content = local.contentRenderer.render(
+        hooks = ["app", "controller", "head", "jumbotron", "title"],
+        content = local.contentHooks,
+        args = local.contentArgs,
+        defaults = {
+            app = "UpliftingLemma"
+        }
+    )>
 </cfsilent>
 
 <cfoutput>
-    <html xmlns:ng="http://angularjs.org" id="ng-app" #local.lc.asAttribute("app", "ng-app")#>
+    <html xmlns:ng="http://angularjs.org" id="ng-app" #local.content.app#>
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            #local.lc.render(item="title", ignoreMissing=true)#
+            <title>#local.content.title#</title>
 
             <!-- jQuery -->
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -70,10 +57,10 @@
             <link rel="stylesheet" href="/assets/css/theme.css">
             <link rel="stylesheet" href="/assets/css/typography.css">
 
-            #local.lc.get("head")#
+            #local.content.head#
         </head>
 
-        <body #local.lc.asAttribute("controller", "ng-controller")#>
+        <body #local.content.controller#>
             #view("common:layout/navbar", {
                 items = [
                     { action = "home:main.about", label = "About" },
@@ -84,20 +71,7 @@
 
             <div id="wrapper">
                 <div id="content">
-                    #local.lc.render("jumbotron")#
-
-                    <!--- TODO: This logic should be handled up at the top of
-                    the template. --->
-                    <!---
-                    <cfif Len(local.showJumbotron)>
-                        <!-- Big header -->
-                        <header class="jumbotron striped">
-                            <div class="container">
-                                #local.render.jumbotron#
-                            </div>
-                        </header>
-                    </cfif>
-                    --->
+                    #local.content.jumbotron#
 
                     <div id="content-body">
                         <div class="container">

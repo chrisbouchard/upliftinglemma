@@ -50,6 +50,7 @@ component extends="framework.one" output=false accessors=true {
          * content to "hooks", which the layout can look for and render. */
         rc.contentRenderer = contentRenderer;
         rc.contentHooks = {};
+        rc.contentArgs = {};
     }
 
 }

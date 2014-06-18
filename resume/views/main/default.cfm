@@ -1,9 +1,9 @@
-<cfset local.lc = getRCValue("layoutConfig")>
+<cfset local.contentHooks = getRCValue("contentHooks")>
 
-<cfset local.lc.set("title", "Christopher J. Bouchard")>
-<cfset local.lc.set("app", "ResumeApp")>
+<cfset local.contentHooks.title = "Christopher J. Bouchard">
+<cfset local.contentHooks.app = "ResumeApp">
 
-<cfsavecontent variable="local.headContent">
+<cfsavecontent variable="local.contentHooks.head">
     <!-- Resume App -->
     <link rel="stylesheet" href="/assets/css/timeline.css">
     <script src="/assets/js/resume-app.js"></script>
@@ -13,7 +13,7 @@
 </cfsavecontent>
 
 <!-- Big header -->
-<cfsavecontent variable="local.jumbotronContent">
+<cfsavecontent variable="local.contentHooks.jumbotron">
     <img id="portrait" class="img-thumbnail hidden-xs hidden-print"
             alt="Photo of Chris Bouchard"
             src="/assets/img/portrait.png">
@@ -22,9 +22,6 @@
         <small>Web Application Developer</small>
     </h1>
 </cfsavecontent>
-
-<cfset local.lc.add("head", local.headContent)>
-<cfset local.lc.set("jumbotron", local.jumbotronContent)>
 
 <div class="clearfix"></div>
 
