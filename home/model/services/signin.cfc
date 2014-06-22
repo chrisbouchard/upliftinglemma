@@ -2,11 +2,11 @@ component output=false accessors=true {
 
     property utilService;
 
-    private any function getGoogleToken( required string code
-                                         required string clientID,
-                                         required string clientSecret,
-                                         required string redirectURI
-                                       ) output=false {
+    public any function getGoogleToken( required string code
+                                        required string clientID,
+                                        required string clientSecret,
+                                        required string redirectURI
+                                      ) output=false {
         var body = utilService.URLEncodedStruct({
             "code": code,
             "client_id": clientID,
