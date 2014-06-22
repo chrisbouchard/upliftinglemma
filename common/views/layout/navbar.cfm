@@ -46,8 +46,9 @@
 
                 <ul class="nav navbar-nav pull-right">
                     <li ng-controller="cbGPlusController">
-                        <google-plus-signin data-width="standard"
-                                data-height="short" clientid="{{clientID}}"
+                        <google-plus-signin class="g-signin navbar-btn"
+                                data-width="standard" data-height="standard"
+                                clientid="{{clientID}}"
                                 data-redirecturi="{{redirectURI}}"
                                 data-accesstype="offline">
                         </google-plus-signin>
