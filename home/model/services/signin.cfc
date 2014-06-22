@@ -9,9 +9,9 @@ component output=false accessors=true {
                                       ) output=false {
         var body = utilService.URLEncodedStruct({
             "code": code,
-            "client_id": clientID,
-            "client_secret": clientSecret,
-            "redirect_uri": redirectURI,
+            "client_id": arguments.clientID,
+            "client_secret": arguments.clientSecret,
+            "redirect_uri": arguments.redirectURI,
             "grant_type": "authorization_code"
         });
 
