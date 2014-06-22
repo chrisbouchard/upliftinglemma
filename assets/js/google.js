@@ -5,6 +5,7 @@
         function ($http, $scope, $window) {
             $scope.clientID = "379488486717-8cr8prgpa6p73kakfl52fisjlbscq92c";
             $scope.redirectURI = "postmessage";
+            $scope.profile = {};
 
             $scope.$on('event:google-plus-signin-success',
                 function (event, authResult) {
