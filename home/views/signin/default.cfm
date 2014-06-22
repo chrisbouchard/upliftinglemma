@@ -8,7 +8,7 @@
 </cfsavecontent>
 
 <div class="row">
-    <div class="col-sm-4" controller="cbGPlusController">
+    <div class="col-sm-4" ng-controller="cbGPlusController">
         <google-plus-signin data-width="wide" data-height="tall"
                 clientid="379488486717-bacsevij42j2dbel1u94r971gl1vo81j"
                 data-redirecturi="postmessage" data-accesstype="offline">
