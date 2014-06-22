@@ -45,14 +45,15 @@
                 </ul>
 
                 <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <button class="btn btn-default navbar-btn">Test</button>
+                    </li>
                     <li ng-controller="cbGPlusController">
-                        <p class="navbar-text">
-                            <google-plus-signin clientid="{{clientID}}"
-                                    data-width="standard" data-height="standard"
-                                    data-redirecturi="{{redirectURI}}"
-                                    data-accesstype="offline">
-                            </google-plus-signin>
-                        </p>
+                        <google-plus-signin clientid="{{clientID}}"
+                                data-width="standard" data-height="standard"
+                                data-redirecturi="{{redirectURI}}"
+                                data-accesstype="offline">
+                        </google-plus-signin>
                     </li>
                 </ul>
             </div>
