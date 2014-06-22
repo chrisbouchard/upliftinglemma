@@ -3,7 +3,7 @@
 
     Google.controller('cbGPlusController', ['$scope', '$window',
         function ($scope, $window) {
-            $scope.on('event:google-plus-signin-success',
+            $scope.$on('event:google-plus-signin-success',
                 function (event, authResult) {
                     console.log('Signin success!');
 
@@ -18,7 +18,7 @@
                 }
             );
 
-            $scope.on('event:google-plus-signin-failure',
+            $scope.$on('event:google-plus-signin-failure',
                 function (event, authResult) {
                     console.log('Signin fail!');
                 }
