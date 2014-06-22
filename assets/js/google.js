@@ -2,6 +2,8 @@
     var Google = angular.module('UpliftingLemma.Google', []);
 
     Google.controller('cbGPlusController', ['$http', '$scope', '$window',
+        $scope.clientID = "379488486717-8cr8prgpa6p73kakfl52fisjlbscq92c";
+
         function ($http, $scope, $window) {
             $scope.$on('event:google-plus-signin-success',
                 function (event, authResult) {
