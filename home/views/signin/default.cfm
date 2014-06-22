@@ -18,7 +18,7 @@
         <p>Sign in with Google+. In the future, I will try to offer other sign
         in options, such as Facebook and Twitter. Each one seems to have its
         own quirks, though, so one at a time.</p>
-        <cfoutput><p>#session.auth#</p></cfoutput>
+        <cfdump var="#session#">
     </div>
 </div>
 
