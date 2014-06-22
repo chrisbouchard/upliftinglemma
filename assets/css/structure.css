@@ -42,6 +42,7 @@ html, body {
 }
 
 .g-plus-profile img {
+    float: right;
     height: 30px;
     border-radius: 5px;
 }

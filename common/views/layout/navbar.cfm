@@ -54,8 +54,8 @@
                             </google-plus-signin>
                         </div>
                         <div class="g-plus-profile" ng-hide="_.isEmpty(profile)">
-                            <p class="navbar-text">{{profile['displayName']}}
-                            <img ng-src="{{profile['image']['url']}}"></p>
+                            <img ng-src="{{profile['image']['url']}}">
+                            <p class="navbar-text">{{profile['displayName']}}</p>
                         </div>
                     </li>
                 </ul>
