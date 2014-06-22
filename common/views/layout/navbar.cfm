@@ -46,11 +46,17 @@
 
                 <ul class="nav navbar-nav signin-nav pull-right">
                     <li ng-controller="cbGPlusController">
-                        <google-plus-signin id="test" clientid="{{clientID}}"
-                                data-width="standard" data-height="standard"
-                                data-redirecturi="{{redirectURI}}"
-                                data-accesstype="offline">
-                        </google-plus-signin>
+                        <div ng-show="_.isEmpty(profile)">
+                            <google-plus-signin clientid="{{clientID}}"
+                                    data-width="standard" data-height="standard"
+                                    data-redirecturi="{{redirectURI}}"
+                                    data-accesstype="offline">
+                            </google-plus-signin>
+                        </div>
+                        <div ng-hide="_.isEmpty(profile)">
+                            {{profile['displayName']}}
+                            <img ng-src="{{profile['image']['url']}}" class="responsive-img">
+                        </div>
                     </li>
                 </ul>
             </div>
