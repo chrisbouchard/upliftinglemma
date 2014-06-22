@@ -46,14 +46,14 @@
 
                 <ul class="nav navbar-nav signin-nav pull-right">
                     <li ng-controller="cbGPlusController">
-                        <div class="g-plus-signin" ng-show="_.isEmpty(profile)">
+                        <div class="g-plus-signin" ng-hide="profileLoaded">
                             <google-plus-signin clientid="{{clientID}}"
                                     data-width="standard" data-height="standard"
                                     data-redirecturi="{{redirectURI}}"
                                     data-accesstype="offline">
                             </google-plus-signin>
                         </div>
-                        <div class="g-plus-profile" ng-hide="_.isEmpty(profile)">
+                        <div class="g-plus-profile" ng-show="profileLoaded">
                             <img ng-src="{{profile['image']['url']}}">
                             <p class="navbar-text">{{profile['displayName']}}</p>
                         </div>

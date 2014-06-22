@@ -5,7 +5,7 @@
         function ($http, $scope, $window) {
             $scope.clientID = "379488486717-8cr8prgpa6p73kakfl52fisjlbscq92c";
             $scope.redirectURI = "postmessage";
-            $scope.profile = {};
+            $scope.profileLoaded = false;
 
             $scope.$on('event:google-plus-signin-success',
                 function (event, authResult) {
@@ -36,6 +36,7 @@
 
                                 $scope.$apply(function () {
                                     $scope.profile = profile;
+                                    $scope.profileLoaded = true;
                                 });
                             });
                         });
