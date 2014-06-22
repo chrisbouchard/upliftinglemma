@@ -2,11 +2,31 @@ component output=false accessors=true {
 
     property utilService;
 
-    public any function getGoogleToken( required string code,
-                                        required string clientID,
-                                        required string clientSecret,
-                                        required string redirectURI
-                                      ) output=false {
+
+    public boolean function isSignedIn() output=false {
+        var status = false;
+
+        lock scope="session" type="readOnly" timeout="30" {
+            status = StructKeyExists(session, "auth");
+        }
+
+        return status;
+    }
+
+
+    public void function storeAuth( required any auth ) output=false {
+        lock scope="session" type="exclusive" timeout="30" {
+            session.auth = auth;
+        }
+    }
+
+
+    public any function getGoogleAuth( required string code,
+                                       required string clientID,
+                                       required string clientSecret,
+                                       required string redirectURI
+                                     )
+    output=false {
         var body = utilService.URLEncodedStruct({
             "code": code,
             "client_id": arguments.clientID,
@@ -29,7 +49,17 @@ component output=false accessors=true {
         httpService.setResolveURL(true);
 
         var result = httpService.send().getPrefix();
-        return DeserializeJSON(result.filecontent.toString());
+        var auth = DeserializeJSON(result.filecontent.toString());
+
+        if (StructKeyExists(auth, "error")) {
+            throw( type = "AuthError"
+                   message = "Could not get token from Google."
+                   detail = auth.error
+                 );
+        }
+
+        return auth;
+
     }
 
 }

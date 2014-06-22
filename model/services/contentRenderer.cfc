@@ -7,7 +7,8 @@ component output=false accessors=true {
                                    required struct content,
                                    struct args = {},
                                    struct defaults = {}
-                                 ) output=false {
+                                 )
+    output=false {
         var output = {};
 
         for (key in hooks) {
@@ -48,7 +49,8 @@ component output=false accessors=true {
 
     public string function renderTitle( required string value,
                                         struct args = {}
-                                      ) output=false {
+                                      )
+    output=false {
         var output = ( StructKeyExists(args, "baseTitle") ?
                        args.baseTitle : "Uplifting Lemma" );
 
