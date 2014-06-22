@@ -9,11 +9,11 @@ component output=false accessors=true {
 
     public void function store( requred struct rc ) output=false {
         if (NOT rc.CSRFVerified) {
-            framework.renderData("text", "error", 401);
+            return framework.renderData("text", "error", 401);
         }
 
         if (NOT StructKeyExists(rc, "code")) {
-            framework.renderData("text", "error", 401);
+            return framework.renderData("text", "error", 401);
         }
 
         var auth = signinService.getGoogleToken( rc.code,
@@ -26,7 +26,7 @@ component output=false accessors=true {
             session.auth = auth;
         }
 
-        framework.renderData("text", "success");
+        return framework.renderData("text", "success");
     }
 
 }
