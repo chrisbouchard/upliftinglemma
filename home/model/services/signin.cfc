@@ -52,8 +52,8 @@ component output=false accessors=true {
         var auth = DeserializeJSON(result.filecontent.toString());
 
         if (StructKeyExists(auth, "error")) {
-            throw( type = "AuthError"
-                   message = "Could not get token from Google."
+            throw( type = "AuthError",
+                   message = "Could not get token from Google.",
                    detail = auth.error
                  );
         }

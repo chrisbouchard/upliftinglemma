@@ -3,6 +3,7 @@
 
     Google.controller('cbGPlusController', ['$http', '$scope', '$window',
         $scope.clientID = "379488486717-8cr8prgpa6p73kakfl52fisjlbscq92c";
+        $scope.redirectURI = "postmessage";
 
         function ($http, $scope, $window) {
             $scope.$on('event:google-plus-signin-success',
