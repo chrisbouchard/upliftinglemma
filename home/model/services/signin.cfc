@@ -14,7 +14,7 @@ component output=false accessors=true {
         }
     }
 
-    private any getGoogleToken( required string code ) output=false {
+    private any function getGoogleToken( required string code ) output=false {
         var httpService = new http();
 
         httpService.setURL("https://accounts.google.com/o/oauth2/token");
