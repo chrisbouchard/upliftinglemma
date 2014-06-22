@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <cfsilent>
+    <cfset local.CSRFToken = getRCValue("CSRFToken")>
     <cfset local.contentRenderer = getRCValue("contentRenderer")>
     <cfset local.contentHooks = getRCValue("contentHooks")>
     <cfset local.contentArgs = getRCValue("contentArgs")>
@@ -49,6 +50,7 @@
 
             <!-- Local JavaScript -->
             <script src="/assets/js/upliftinglemma-app.js"></script>
+            <script>var CSRFToken = "#local.CSRFToken#";</script>
 
             <!-- Local Style -->
             <link rel="stylesheet" href="/assets/css/print.css" media="print">
