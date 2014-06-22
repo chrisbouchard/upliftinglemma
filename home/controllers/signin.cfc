@@ -12,15 +12,19 @@ component output=false accessors=true {
             framework.renderData("text", "error", 401);
         }
 
-        if (NOT StructKeyExists(rc, "GoogleData")) {
+        if (NOT StructKeyExists(rc, "code")) {
             framework.renderData("text", "error", 401);
         }
 
-        signinService.store( data = rc.GoogleData,
-                             clientID = variables.clientID,
-                             clientSecret = variables.clientSecret,
-                             redirectURI = variables.redirectURI
-                           );
+        var auth = signinService.getGoogleToken( rc.code,
+                                                 variables.clientID,
+                                                 variables.clientSecret,
+                                                 variables.redirectURI
+                                               );
+
+        lock scope="session" type="exclusive" timeout="30" {
+            session.auth = auth;
+        }
 
         framework.renderData("text", "success");
     }

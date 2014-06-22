@@ -7,9 +7,16 @@
                 function (event, authResult) {
                     console.log('Signin success!');
 
-                    $http.post('/signin/store', {
-                        'CSRFToken': $window.CSRFToken,
-                        'GoogleData': authResult.code
+                    $http({
+                        method: 'POST',
+                        url: '/signin/store',
+                        data: $.param({
+                            'CSRFToken': $window.CSRFToken,
+                            'code': authResult.code
+                        }),
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        }
                     }).success(function (data, status, headers, config) {
                         console.log('Store success!');
                     }).error(function (data, status, headers, config) {
