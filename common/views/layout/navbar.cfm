@@ -45,10 +45,12 @@
                 </ul>
 
                 <ul class="nav navbar-nav pull-right">
-                    <li>
-                        <a href="#buildURL("home:signin.default")#">
-                            Sign In
-                        </a>
+                    <li ng-controller="cbGPlusController">
+                        <google-plus-signin data-width="standard"
+                                data-height="short" clientid="{{clientID}}"
+                                data-redirecturi="{{redirectURI}}"
+                                data-accesstype="offline">
+                        </google-plus-signin>
                     </li>
                 </ul>
             </div>

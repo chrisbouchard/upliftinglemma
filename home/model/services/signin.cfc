@@ -4,13 +4,35 @@ component output=false accessors=true {
 
 
     public boolean function isSignedIn() output=false {
-        var status = false;
-
-        lock scope="session" type="readOnly" timeout="30" {
-            status = StructKeyExists(session, "auth");
+        try {
+            this.loadAuth();
+        }
+        catch (AuthError ex) {
+            return false;
         }
 
-        return status;
+        return true;
+    }
+
+
+    public any function loadAuth() output=false {
+        var authFound = false;
+        var auth = {};
+
+        lock scope="session" type="readOnly" timeout="30" {
+            if (StructKeyExists(session, "auth")) {
+                authFound = true;
+                auth = session.auth;
+            }
+        }
+
+        if (NOT authFound) {
+            throw( type = "AuthError",
+                   message = "Could not load authorization."
+                 );
+        }
+
+        return auth;
     }
 
 
