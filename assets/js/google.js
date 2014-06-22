@@ -1,8 +1,8 @@
 (function () {
     var Google = angular.module('UpliftingLemma.Google', []);
 
-    Google.controller('cbGPlusController', ['$scope', '$window',
-        function ($scope, $window) {
+    Google.controller('cbGPlusController', ['$http', '$scope', '$window',
+        function ($http, $scope, $window) {
             $scope.$on('event:google-plus-signin-success',
                 function (event, authResult) {
                     console.log('Signin success!');
