@@ -24,9 +24,14 @@
                     }).success(function (data, status, headers, config) {
                         console.log('Store success!');
 
-                        var request = gapi.client.plus.people.get( {'userId' : 'me'} );
-                        request.execute(function (profile) {
-                            $scope.profile = profile;
+                        gapi.client.load('plus','v1', function () {
+                            var request = gapi.client.plus.people.get({
+                                'userId': 'me'
+                            });
+
+                            request.execute(function (profile) {
+                                $scope.profile = profile;
+                            });
                         });
                     }).error(function (data, status, headers, config) {
                         console.log('Store fail!');
