@@ -34,7 +34,7 @@ html, body {
     margin-bottom: 15px;
 }
 
-.signin-nav button {
+.signin-nav li > div {
     margin-top: 8px;
     margin-bottom: 8px;
 }
