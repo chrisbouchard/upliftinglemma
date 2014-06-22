@@ -35,19 +35,15 @@ component extends="framework.one" output=false accessors=true {
     public void function setupApplication() output=false {
         var beanFactory = this.getBeanFactory();
 
+        /* The cross-site request forgery Guard needs to know the application
+         * key to generate tokens. */
+        beanFactory.addBean("applicationKey", variables.framework.applicationKey);
+
         /* The content renderer needs to know about the framework to render
          * views. It's generally considered bad practice for services to know
          * about the framework, but I think this is better than the
          * alternatives. */
-        beanFactory.injectProperties("contentRendererService", {
-            framework = this
-        });
-
-        /* The cross-site request forgery Guard needs to know the application
-         * key to generate tokens. */
-        beanFactory.injectProperties("CSRFGuard", {
-            applicationKey = variables.framework.applicationKey
-        });
+        beanFactory.addBean("framework", this);
     }
 
     public void function setupRequest() output=false {
