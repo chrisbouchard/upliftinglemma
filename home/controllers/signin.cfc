@@ -23,7 +23,7 @@ component output=false accessors=true {
             signinService.store(auth);
         }
         catch (ex) {
-            return framework.renderData("text", "error", 403);
+            return framework.renderData("text", "error: " & ex.message, 403);
         }
 
         return framework.renderData("text", "success");
