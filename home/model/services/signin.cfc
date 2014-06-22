@@ -7,6 +7,14 @@ component output=false accessors=true {
                                          required string clientSecret,
                                          required string redirectURI
                                        ) output=false {
+        var body = utilService.URLEncodedStruct({
+            "code": code,
+            "client_id": clientID,
+            "client_secret": clientSecret,
+            "redirect_uri": redirectURI,
+            "grant_type": "authorization_code"
+        });
+
         var httpService = new http();
 
         httpService.setURL("https://accounts.google.com/o/oauth2/token");
@@ -16,13 +24,7 @@ component output=false accessors=true {
                               value="application/x-www-form-urlencoded"
                             );
 
-        httpService.addParam(type="body", value=utilService.URLEncodedStruct({
-            "code": code,
-            "client_id": clientID,
-            "client_secret": clientSecret,
-            "redirect_uri": redirectURI,
-            "grant_type": "authorization_code"
-        }));
+        httpService.addParam(type="body", value=body);
 
         httpService.setResolveURL(true);
 
