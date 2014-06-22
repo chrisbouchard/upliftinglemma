@@ -34,10 +34,15 @@ html, body {
     margin-bottom: 15px;
 }
 
-.signin-nav li > div {
+.g-plus-signin > div {
     /* Mark these as important because the style attribute will try to zero
      * them out. */
     margin-top: 8px !important;
     margin-bottom: 8px !important;
+}
+
+.g-plus-profile img {
+    height: 30px;
+    border-radius: 5px;
 }
 
