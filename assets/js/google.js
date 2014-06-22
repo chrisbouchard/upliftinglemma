@@ -9,8 +9,10 @@
                     'GoogleData': authResult.code
                 }).success(function (data, status, headers, config) {
                     console.log('Signin success!');
+                    gapi.auth.signOut();
                 }).error(function (data, status, headers, config) {
                     console.log('Signin failed!');
+                    gapi.auth.signOut();
                 });
             }
         );
