@@ -49,3 +49,7 @@ html, body {
     margin-bottom: 8px;
 }
 
+.g-plus-profile p.navbar-text {
+    padding-right: 6px;
+}
+
