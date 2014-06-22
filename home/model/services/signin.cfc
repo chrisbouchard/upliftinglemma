@@ -2,7 +2,7 @@ component output=false accessors=true {
 
     property utilService;
 
-    public any function getGoogleToken( required string code
+    public any function getGoogleToken( required string code,
                                         required string clientID,
                                         required string clientSecret,
                                         required string redirectURI
