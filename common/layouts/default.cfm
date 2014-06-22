@@ -50,6 +50,7 @@
 
             <!-- Local JavaScript -->
             <script src="/assets/js/upliftinglemma-app.js"></script>
+            <script src="/assets/js/google.js"></script>
             <script>var CSRFToken = "#local.CSRFToken#";</script>
 
             <!-- Local Style -->
