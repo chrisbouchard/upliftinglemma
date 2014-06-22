@@ -1,6 +1,7 @@
 component output=false accessors=true {
 
     property utilService;
+    property framework;
 
     public void function store( required struct data,
                                 required string clientID,
@@ -12,6 +13,8 @@ component output=false accessors=true {
         lock scope="session" type="exclusive" timeout="30" {
             session.auth = auth;
         }
+
+        framework.renderData("text", "success");
     }
 
     private any function getGoogleToken( required string code ) output=false {
