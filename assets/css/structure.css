@@ -45,5 +45,7 @@ html, body {
     float: right;
     height: 30px;
     border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
