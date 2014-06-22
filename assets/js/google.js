@@ -25,11 +25,15 @@
                         console.log('Store success!');
 
                         gapi.client.load('plus','v1', function () {
+                            console.log('API loaded!');
+
                             var request = gapi.client.plus.people.get({
                                 'userId': 'me'
                             });
 
                             request.execute(function (profile) {
+                                console.log('Request returned!');
+
                                 $scope.$apply(function () {
                                     $scope.profile = profile;
                                 });
