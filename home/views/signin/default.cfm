@@ -11,7 +11,7 @@
     <div class="col-sm-4" controller="cbGPlusController">
         <google-plus-signin data-width="wide" data-height="tall"
                 clientid="379488486717-bacsevij42j2dbel1u94r971gl1vo81j"
-                data-redirecturi="/login/auth" data-accesstype="offline">
+                data-redirecturi="postmessage" data-accesstype="offline">
         </google-plus-signin>
     </div>
     <div class="col-sm-8">
