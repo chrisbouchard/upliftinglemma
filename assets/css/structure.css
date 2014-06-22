@@ -35,7 +35,9 @@ html, body {
 }
 
 .signin-nav li > div {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    /* Mark these as important because the style attribute will try to zero
+     * them out. */
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
 }
 
