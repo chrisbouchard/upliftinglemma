@@ -13,13 +13,18 @@ component output=false accessors=true {
             return framework.renderData("text", "error", 403);
         }
 
-        var auth = signinService.getGoogleAuth( rc.code,
-                                                googleClientService.getClientID(),
-                                                googleClientService.getClientSecret(),
-                                                "postmessage"
-                                              );
+        try {
+            var auth = signinService.getGoogleAuth( rc.code,
+                                                    googleClientService.getClientID(),
+                                                    googleClientService.getClientSecret(),
+                                                    "postmessage"
+                                                );
 
-        signinService.store(auth);
+            signinService.store(auth);
+        }
+        catch (ex) {
+            return framework.renderData("text", "error", 403);
+        }
 
         return framework.renderData("text", "success");
     }
