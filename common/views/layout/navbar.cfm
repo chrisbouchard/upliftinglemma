@@ -44,10 +44,7 @@
                     </cfloop>
                 </ul>
 
-                <ul class="nav navbar-nav pull-right">
-                    <li>
-                        <button class="btn btn-default navbar-btn">Test</button>
-                    </li>
+                <ul class="nav navbar-nav signin-nav pull-right">
                     <li ng-controller="cbGPlusController">
                         <google-plus-signin clientid="{{clientID}}"
                                 data-width="standard" data-height="standard"

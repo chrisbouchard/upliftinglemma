@@ -34,3 +34,8 @@ html, body {
     margin-bottom: 15px;
 }
 
+.signin-nav button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
