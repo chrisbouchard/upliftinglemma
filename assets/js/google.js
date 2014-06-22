@@ -8,7 +8,9 @@
                     'CSRFToken': $window.CSRFToken,
                     'GoogleData': authResult.code
                 }).success(function (data, status, headers, config) {
+                    console.log('Signin success!');
                 }).error(function (data, status, headers, config) {
+                    console.log('Signin failed!');
                 });
             }
         );
