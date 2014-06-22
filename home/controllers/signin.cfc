@@ -9,11 +9,11 @@ component output=false accessors=true {
 
     public void function store( requred struct rc ) output=false {
         if (NOT rc.CSRFVerified) {
-            /* Error here. */
+            framework.renderData("text", "error", 401);
         }
 
         if (NOT StructKeyExists(rc, "GoogleData")) {
-            /* Error here. */
+            framework.renderData("text", "error", 401);
         }
 
         signinService.store( data = rc.GoogleData,
