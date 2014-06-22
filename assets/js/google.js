@@ -30,7 +30,9 @@
                             });
 
                             request.execute(function (profile) {
-                                $scope.profile = profile;
+                                $scope.$apply(function () {
+                                    $scope.profile = profile;
+                                });
                             });
                         });
                     }).error(function (data, status, headers, config) {
