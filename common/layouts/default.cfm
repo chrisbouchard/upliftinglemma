@@ -45,9 +45,6 @@
             <!-- Datejs -->
             <script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
-            <!-- Google+ Signin Directive -->
-            <script src="/assets/js/google-plus-signin.js"></script>
-
             <!-- Local JavaScript -->
             <script src="/assets/js/upliftinglemma-app.js"></script>
             <script src="/assets/js/google.js"></script>

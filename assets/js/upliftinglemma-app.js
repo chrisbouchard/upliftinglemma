@@ -1,6 +1,6 @@
 (function () {
     var UpliftingLemma = angular.module('UpliftingLemma', [
-        'directive.g+signin', 'UpliftingLemma.Google'
+        'UpliftingLemma.Google'
     ]);
 })();
 
