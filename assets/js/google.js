@@ -1,4 +1,6 @@
 (function () {
+    'use strict';
+
     var Google = angular.module('UpliftingLemma.Google', []);
 
     Google.directive('cbGplusSigninButton', ['$http', '$window',
