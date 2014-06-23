@@ -47,15 +47,15 @@
                 <ul class="nav navbar-nav signin-nav pull-right">
                     <li ng-controller="cbGPlusController">
                         <div class="g-plus-signin" ng-hide="profileLoaded">
-                            <cb-gplus-signin-button
+                            <cb:gplus-signin-button
                                     data-clientid="{{clientID}}"
                                     data-redirecturi="{{redirectURI}}"
                                     data-accesstype="offline">
-                            </cb-gplus-signin-button>
+                            </cb:gplus-signin-button>
                         </div>
                         <div class="g-plus-profile" ng-show="profileLoaded">
-                            <img ng-src="{{profile['image']['url']}}">
-                            <p class="navbar-text">{{profile['displayName']}}</p>
+                            <img ng-src="{{profile.image.url}}">
+                            <p class="navbar-text">{{profile.displayName}}</p>
                         </div>
                     </li>
                 </ul>

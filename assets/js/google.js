@@ -7,6 +7,7 @@
         function ($http, $window) {
             return {
                 scope: true,
+                restrict: 'AE',
                 template: '<span ng-class="g-signin {{class}}"></span>',
                 replace: true,
                 link: function (scope, element, attrs) {
