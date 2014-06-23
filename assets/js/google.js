@@ -4,6 +4,7 @@
     Google.controller('cbGPlusController', ['$http', '$scope', '$window',
         function ($http, $scope, $window) {
             $scope.clientID = "379488486717-8cr8prgpa6p73kakfl52fisjlbscq92c";
+            $scope.apiKey = "AIzaSyAbIhwdrdIInUSfTyggdHwgWvM3G0hgbTE";
             $scope.redirectURI = "postmessage";
             $scope.profileLoaded = false;
 
@@ -23,6 +24,8 @@
                         }
                     }).success(function (data, status, headers, config) {
                         console.log('Store success!');
+
+                        gapi.client.setApiKey($scope.apiKey);
 
                         gapi.client.load('plus','v1', function () {
                             console.log('API loaded!');
