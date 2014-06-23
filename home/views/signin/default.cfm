@@ -9,8 +9,8 @@
 
 <div class="row">
     <div class="col-sm-4" ng-controller="cbGPlusController">
-        <cb-gplus-signin-button data-width="standard" data-height="standard"
-                data-clientid="{{clientID}}" data-redirecturi="{{redirectURI}}"
+        <cb-gplus-signin-button data-clientid="{{clientID}}"
+                data-redirecturi="{{redirectURI}}"
                 data-accesstype="offline">
         </cb-gplus-signin-button>
     </div>

@@ -48,8 +48,6 @@
                     <li ng-controller="cbGPlusController">
                         <div class="g-plus-signin" ng-hide="profileLoaded">
                             <cb-gplus-signin-button
-                                    data-width="standard"
-                                    data-height="standard"
                                     data-clientid="{{clientID}}"
                                     data-redirecturi="{{redirectURI}}"
                                     data-accesstype="offline">
