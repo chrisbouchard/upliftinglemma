@@ -25,7 +25,7 @@
                     }).success(function (data, status, headers, config) {
                         console.log('Store success!');
 
-                        gapi.client.setApiKey($scope.apiKey);
+                        //gapi.client.setApiKey($scope.apiKey);
 
                         gapi.client.load('plus','v1', function () {
                             console.log('API loaded!');
