@@ -32,9 +32,7 @@
 
                     // Forward the class so the template can see it.
                     attrs.$observe('class', function (value) {
-                        scope.$apply(function () {
-                            scope.class = value;
-                        });
+                        scope.class = value;
                     });
 
                     /* Watch for signin success. We may need to send the
