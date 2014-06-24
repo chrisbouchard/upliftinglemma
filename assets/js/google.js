@@ -68,11 +68,11 @@
                     });
 
                     if (angular.isDefined($window.gapi)) {
-                        $window.gapi.signin.render(element.get(0));
+                        $window.gapi.signin.go(element.get(0));
                     }
                     else {
                         scope.$on('event:cb-gplus-client-load', function (event) {
-                            $window.gapi.signin.render(element.get(0));
+                            $window.gapi.signin.go(element.get(0));
                         });
                     }
                 }
@@ -93,6 +93,10 @@
 
         $window.cbGplusClientLoadCallback = function () {
             $rootScope.$broadcast('event:cb-gplus-client-load');
+        };
+
+        $window.___gcfg = {
+            parsetags: 'explicit'
         };
 
         // Load the G+ API script asynchronously
