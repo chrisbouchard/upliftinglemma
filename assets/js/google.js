@@ -8,6 +8,7 @@
             return {
                 scope: true,
                 restrict: 'E',
+                template: '<span class="g-signin"></span>',
                 link: function (scope, element, attrs) {
                     var paramKeys = [
                         'class', 'clientid', 'cookiepolicy', 'accesstype',
@@ -70,12 +71,14 @@
                         }
                     });
 
+                    var button = element.children('.g-signin').get(0);
+
                     if (angular.isDefined($window.gapi)) {
-                        $window.gapi.signin.render(element.get(0), params);
+                        $window.gapi.signin.render(button, params);
                     }
                     else {
                         scope.$on('event:cb-gplus-client-load', function (event) {
-                            $window.gapi.signin.render(element.get(0), params);
+                            $window.gapi.signin.render(button, params);
                         });
                     }
                 }
