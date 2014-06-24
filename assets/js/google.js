@@ -71,11 +71,11 @@
                     });
 
                     if (angular.isDefined($window.gapi)) {
-                        $window.gapi.signin.render(element, params);
+                        $window.gapi.signin.render(element.get(0), params);
                     }
                     else {
                         scope.$on('event:cb-gplus-client-load', function (event) {
-                            $window.gapi.signin.render(element, params);
+                            $window.gapi.signin.render(element.get(0), params);
                         });
                     }
                 }
