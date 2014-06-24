@@ -560,7 +560,7 @@
         <span class="fa fa-info-circle"></span>&nbsp;
         <strong>Heads up!</strong> There&rsquo;s a live version of this
         r&eacute;sum&eacute; available
-        <cfoutput><a href="#buildURL("resume:main")#">online</a></cfoutput>.
+        <a href="http://upliftinglemma.net/resume:main">online</a>.
     </p>
 </footer>
 
