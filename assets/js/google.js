@@ -7,7 +7,7 @@
         function ($http, $rootScope, $window) {
             return {
                 scope: true,
-                restrict: 'AE',
+                restrict: 'E',
                 template: '<span ng-class="g-signin {{class}}"></span>',
                 replace: true,
                 link: function (scope, element, attrs) {
@@ -68,11 +68,11 @@
                     });
 
                     if (angular.isDefined($window.gapi)) {
-                        $window.gapi.signin.go(element.get(0));
+                        $window.gapi.signin.render(element.get(0));
                     }
                     else {
                         scope.$on('event:cb-gplus-client-load', function (event) {
-                            $window.gapi.signin.go(element.get(0));
+                            $window.gapi.signin.render(element.get(0));
                         });
                     }
                 }
