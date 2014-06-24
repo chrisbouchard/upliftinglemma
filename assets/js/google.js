@@ -67,7 +67,14 @@
                         }
                     });
 
-                    gapi.signin.render(element.get(0));
+                    if (gapi) {
+                        gapi.signin.render(element.get(0));
+                    }
+                    else {
+                        scope.$on('event:cb-gplus-client-load', function (event) {
+                            gapi.signin.render(element.get(0));
+                        });
+                    }
                 }
             };
         }
