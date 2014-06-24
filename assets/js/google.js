@@ -3,16 +3,20 @@
 
     var Google = angular.module('UpliftingLemma.Google', []);
 
-    Google.directive('cbGplusSigninButton', ['$http', '$rootScope', '$window',
-        function ($http, $rootScope, $window) {
+    Google.directive('cbGplusSigninButton', ['$http', '$rootScope', '$timeout', '$window',
+        function ($http, $rootScope, $timeout, $window) {
             return {
                 scope: true,
                 restrict: 'E',
-                template: '<span ng-class="g-signin {{class}}"></span>',
-                replace: true,
                 link: function (scope, element, attrs) {
-                    var defaults = {
-                        'callback': 'cbGplusSigninCallback',
+                    var paramKeys = [
+                        'class', 'clientid', 'cookiepolicy', 'accesstype',
+                        'apppackagename', 'approvalprompt', 'height',
+                        'includegrantedscopes', 'requestvisibleactions',
+                        'scope', 'theme', 'width'
+                    ];
+
+                    var paramDefaults = {
                         'cookiepolicy': 'single_host_origin',
                         'requestvisibleactions': [
                             'http://schemas.google.com/AddActivity'
@@ -23,16 +27,15 @@
                         ].join(' '),
                     };
 
-                    // Set attributes that are missing with default values.
-                    angular.forEach(defaults, function (value, key) {
-                        if (!attrs.hasOwnProperty(key)) {
-                            attrs.$set('data-' + key, value);
-                        }
-                    });
+                    var params = { 'callback': 'cbGplusSigninCallback' };
 
-                    // Forward the class so the template can see it.
-                    attrs.$observe('class', function (value) {
-                        scope.class = value;
+                    angular.forEach(paramKeys, function (key) {
+                        if (attrs.hasOwnProperty(key)) {
+                            params[key] = attrs[key];
+                        }
+                        else if (paramDefaults.hasOwnProperty(key)) {
+                            params[key] = paramDefaults[key];
+                        }
                     });
 
                     /* Watch for signin success. We may need to send the
@@ -68,11 +71,11 @@
                     });
 
                     if (angular.isDefined($window.gapi)) {
-                        $window.gapi.signin.render(element.get(0));
+                        $window.gapi.signin.render(element, params);
                     }
                     else {
                         scope.$on('event:cb-gplus-client-load', function (event) {
-                            $window.gapi.signin.render(element.get(0));
+                            $window.gapi.signin.render(element, params);
                         });
                     }
                 }
