@@ -34,7 +34,7 @@ html, body {
     margin-bottom: 15px;
 }
 
-.g-plus-signin > div {
+#navbar .g-signin {
     /* Mark these as important because the style attribute will try to zero
      * them out. */
     margin-top: 8px !important;
