@@ -67,7 +67,7 @@
                         }
                     });
 
-                    gapi.signin.render(element);
+                    gapi.signin.render(element.get(0));
                 }
             };
         }
