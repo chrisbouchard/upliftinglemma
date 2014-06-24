@@ -6,7 +6,7 @@
     Google.directive('cbGplusSigninButton', ['$http', '$rootScope', '$timeout', '$window',
         function ($http, $rootScope, $timeout, $window) {
             return {
-                scope: true,
+                scope: {},
                 restrict: 'E',
                 template: '<span class="g-signin"></span>',
                 link: function (scope, element, attrs) {
