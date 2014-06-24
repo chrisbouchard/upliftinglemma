@@ -3,8 +3,8 @@
 
     var Google = angular.module('UpliftingLemma.Google', []);
 
-    Google.directive('cbGplusSigninButton', ['$http', '$window',
-        function ($http, $window) {
+    Google.directive('cbGplusSigninButton', ['$http', '$rootScope', '$window',
+        function ($http, $rootScope, $window) {
             return {
                 scope: true,
                 restrict: 'AE',
@@ -66,6 +66,8 @@
                             });
                         }
                     });
+
+                    gapi.signin.render(element);
                 }
             };
         }
