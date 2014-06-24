@@ -67,12 +67,12 @@
                         }
                     });
 
-                    if (gapi) {
-                        gapi.signin.render(element.get(0));
+                    if (angular.isDefined($window.gapi)) {
+                        $window.gapi.signin.render(element.get(0));
                     }
                     else {
                         scope.$on('event:cb-gplus-client-load', function (event) {
-                            gapi.signin.render(element.get(0));
+                            $window.gapi.signin.render(element.get(0));
                         });
                     }
                 }
