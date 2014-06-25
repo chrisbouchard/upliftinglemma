@@ -60,15 +60,14 @@ component output=false accessors=true {
         var httpService = new http();
 
         httpService.setURL("https://accounts.google.com/o/oauth2/token");
-        httpService.setMethod("post");
+        httpService.setMethod("POST");
+        httpService.setResolveURL(true);
 
         httpService.addParam( type="header", name="Content-Type",
                               value="application/x-www-form-urlencoded"
                             );
 
         httpService.addParam(type="body", value=body);
-
-        httpService.setResolveURL(true);
 
         var result = httpService.send().getPrefix();
         var auth = DeserializeJSON(result.filecontent.toString());
