@@ -135,48 +135,26 @@
                 'CSRFToken': $window.CSRFToken
             };
 
-            $scope.$on('event:google-plus-signin-success',
+            $scope.$on('event:cb-gplus-server-success',
                 function (event, authResult) {
                     console.log('Signin success!');
 
-                    $http({
-                        method: 'POST',
-                        url: '/signin/store',
-                        data: $.param({
-                            'CSRFToken': $window.CSRFToken,
-                            'code': authResult.code
-                        }),
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        }
-                    }).success(function (data, status, headers, config) {
-                        console.log('Store success!');
+                    gapi.client.load('plus', 'v1', function () {
+                        console.log('API loaded!');
 
-                        gapi.client.load('plus', 'v1', function () {
-                            console.log('API loaded!');
+                        var request = gapi.client.plus.people.get({
+                            'userId': 'me'
+                        });
 
-                            var request = gapi.client.plus.people.get({
-                                'userId': 'me'
-                            });
+                        request.execute(function (profile) {
+                            console.log('Request returned!');
 
-                            request.execute(function (profile) {
-                                console.log('Request returned!');
-
-                                $scope.$apply(function () {
-                                    $scope.profile = profile;
-                                    $scope.profileLoaded = true;
-                                });
+                            $scope.$apply(function () {
+                                $scope.profile = profile;
+                                $scope.profileLoaded = true;
                             });
                         });
-                    }).error(function (data, status, headers, config) {
-                        console.log('Store fail!');
                     });
-                }
-            );
-
-            $scope.$on('event:google-plus-signin-failure',
-                function (event, authResult) {
-                    console.log('Signin fail!');
                 }
             );
         }
