@@ -6,7 +6,7 @@
     Google.directive('cbGplusSigninButton', ['$http', '$rootScope', '$timeout', '$window',
         function ($http, $rootScope, $timeout, $window) {
             return {
-                scope: {},
+                scope: true,
                 restrict: 'E',
                 template: '<span class="g-signin"></span>',
                 link: function (scope, element, attrs) {
@@ -131,6 +131,9 @@
             $scope.apiKey = "AIzaSyAbIhwdrdIInUSfTyggdHwgWvM3G0hgbTE";
             $scope.redirectURI = "postmessage";
             $scope.profileLoaded = false;
+            $scope.serverData = {
+                'CSRFToken': $window.CSRFToken;
+            };
 
             $scope.$on('event:google-plus-signin-success',
                 function (event, authResult) {
