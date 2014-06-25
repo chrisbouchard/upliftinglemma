@@ -50,7 +50,8 @@
                             <cb:gplus-signin-button
                                     data-clientid="{{clientID}}"
                                     data-redirecturi="{{redirectURI}}"
-                                    data-accesstype="offline">
+                                    data-accesstype="offline"
+                                    data-server-callback="/signin/store">
                             </cb:gplus-signin-button>
                         </div>
                         <div class="g-plus-profile" ng-show="profileLoaded">
