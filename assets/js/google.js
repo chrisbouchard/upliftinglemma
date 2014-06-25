@@ -50,7 +50,7 @@
                         var reqs = [authResult.code, attrs.serverCallback];
 
                         // If they are...
-                        if (_.each(reqs, angular.isDefined)) {
+                        if (_.all(reqs, angular.isDefined)) {
                             var postData = $.param(angular.extend(
                                 {'code': authResult.code},
                                 scope.$eval(attrs.serverData)
