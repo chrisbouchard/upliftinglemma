@@ -132,7 +132,7 @@
             $scope.redirectURI = "postmessage";
             $scope.profileLoaded = false;
             $scope.serverData = {
-                'CSRFToken': $window.CSRFToken;
+                'CSRFToken': $window.CSRFToken
             };
 
             $scope.$on('event:google-plus-signin-success',
