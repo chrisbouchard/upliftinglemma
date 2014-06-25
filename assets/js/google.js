@@ -10,6 +10,10 @@
                 restrict: 'E',
                 template: '<span class="g-signin"></span>',
                 link: function (scope, element, attrs) {
+                    /* These are the parameters that we will forward to the
+                     * Google+ signin button. Note that we don't forward
+                     * callback. We want to use the global callback we defined
+                     * at start-up. */
                     var paramKeys = [
                         'class', 'clientid', 'cookiepolicy', 'accesstype',
                         'apppackagename', 'approvalprompt', 'height',
@@ -28,7 +32,7 @@
                         ].join(' '),
                     };
 
-                    var params = { 'callback': 'cbGplusSigninCallback' };
+                    var params = {};
 
                     angular.forEach(paramKeys, function (key) {
                         if (attrs.hasOwnProperty(key)) {
@@ -104,6 +108,12 @@
         $window.___gcfg = {
             parsetags: 'explicit'
         };
+
+        // Set this global callback as the default callback.
+        $('<meta>')
+            .attr('name', 'google-signin-callback')
+            .attr('content', 'cbGplusSigninCallback')
+            .appendTo('head');
 
         // Load the G+ API script asynchronously
         $('<script>')
