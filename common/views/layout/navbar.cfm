@@ -52,7 +52,8 @@
                                     data-redirecturi="{{redirectURI}}"
                                     data-accesstype="offline"
                                     data-server-callback="/signin/store"
-                                    data-server-data="{{serverData}}">
+                                    data-server-data="{{serverData}}"
+                                    data-approvalprompt="force">
                             </cb:gplus-signin-button>
                         </div>
                         <div class="g-plus-profile" ng-show="profileLoaded">
