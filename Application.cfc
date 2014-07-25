@@ -6,6 +6,13 @@ component extends="framework.one" output=false accessors=true {
     this.sessionManagement = true;
     this.name = "UpliftingLemma";
 
+    /* Set up ORM. */
+    this.ormenabled = true;
+    this.ormsettings = {
+        datasource = "upliftinglemma_orm",
+        namingstrategy = "smart"
+    };
+
     /* Set up FW/1. */
     variables.framework = {
         usingSubsystems = true,

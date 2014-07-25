@@ -33,9 +33,9 @@
                 <div class="col-sm-6 col-print-6">
                     <ul class="fa-ul">
                         <!-- Email -->
-                        <li><p><a href="mailto:cbou@cs.albany.edu">
+                        <li><p><a href="mailto:chris@upliftinglemma.net">
                             <span class="fa fa-li fa-send"></span>
-                            cbou@cs.albany.edu
+                            chris@upliftinglemma.net
                         </a></p></li>
 
                         <!-- Phone number -->
