@@ -2,12 +2,7 @@
 <cfset local.contentHooks.title = "About">
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
-    <div class="logo logo-small">
-        <a href="/">
-            <img src="/assets/img/upliftinglemma_logo_white.svg">
-            Uplifting Lemma
-        </a>
-    </div>
+    <a class="logo logo-small" href="/">Uplifting Lemma</a>
     <h1>About the Uplifting Lemma</h1>
     <p>Or, where have all the good domain names gone?</p>
 </cfsavecontent>
@@ -41,11 +36,11 @@
 </div>
 
 <p><a href="http://en.wikipedia.org/wiki/Lemma_(mathematics)">According to
-Wikipedia</a>, the word <i>lemma</i> comes from the ancient Greek <i>λῆμμα</i>
-meaning &ldquo;anything which is received, such as a gift, profit, or a
-bribe&rdquo;. A lemma is a &ldquo;stepping stone&rdquo; to a theorem.
-Good lemmas lead the reader to the result, building up reasoning so the reader
-knows the proof of the theorem before even seeing it.</p>
+<span class="wiki-w">Wikipedia</span></a>, the word <i>lemma</i> comes from the
+ancient Greek <i>λῆμμα</i> meaning &ldquo;anything which is received, such as a
+gift, profit, or a bribe&rdquo;. A lemma is a &ldquo;stepping stone&rdquo; to a
+theorem. Good lemmas lead the reader to the result, building up reasoning so
+the reader knows the proof of the theorem before even seeing it.</p>
 
 <p>Any researcher can tell you: most lemmas are <strong>not</strong> good
 lemmas.</p>

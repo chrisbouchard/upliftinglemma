@@ -1,7 +1,6 @@
 body {
     font-family: Linux Libertine, serif;
     text-rendering: optimizeLegibility;
-    font-variant-ligatures: common-ligatures;
 }
 
 section {
@@ -11,6 +10,10 @@ section {
 h1, h2, h3, h4, h5, h6, h5 {
     break-after: avoid;
     page-break-after: avoid;
+}
+
+#content-body {
+    background: white;
 }
 
 #my-contact-info {
@@ -23,50 +26,50 @@ h1, h2, h3, h4, h5, h6, h5 {
     height: auto;
 }
 
-.logo {
-    color: white;
+a.logo {
+    color: white !important;
 }
 
-.logo-large {
+a.logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a.logo::before {
+    float: left;
+    display: inline-block;
+    content: 'a';
+    font-family: 'Uplifting Lemma';
+}
+
+a.logo-large {
     display: block;
     font-size: 63px;
 }
 
-.logo-small {
+a.logo-large::before {
+    font-size: 110px;
+    margin-top: -15px;
+    margin-right: 25px;
+}
+
+a.logo-small {
     display: inline-block;
-    font-size: 30px;
+    font-size: 35px;
     padding-top: 5px;
     padding-bottom: 5px;
     opacity: 0.6;
 }
 
-.logo-small:hover {
+a.logo-small:hover {
     opacity: 1.0;
 }
 
-.logo a {
-    color: white;
-}
-
-.logo a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-.logo img {
-    float: left;
-    width: auto;
-}
-
-.logo-large img {
-    height: 110px;
-    margin-top: 5px;
-    margin-right: 25px;
-}
-
-.logo-small img {
-    height: 40px;
+a.logo-small::before {
+    font-size: 50px;
+    margin-top: -10px;
     margin-right: 10px;
+    margin-bottom: 15px;
 }
 
 .upliftinglemma {
@@ -78,7 +81,7 @@ h1, h2, h3, h4, h5, h6, h5 {
 .jumbotron {
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    background-attachment: fixed;
+    background: none;
 }
 
 .jumbotron h1 small {
@@ -102,11 +105,22 @@ h1, h2, h3, h4, h5, h6, h5 {
 }
 
 .striped {
+    background-attachment: fixed;
     background-color: hsl(250, 60%, 40%);
-    background-size: 4ex 4ex;
     background-image: linear-gradient(45deg, hsla(240, 50%, 60%, 0.1) 25%, transparent 25%,
         transparent 50%, hsla(240, 50%, 60%, 0.1) 50%, hsla(240, 50%, 60%, 0.1) 75%,
         transparent 75%, transparent);
+    background-size: 4ex 4ex;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.striped a {
+    color: hsl(208, 50%, 70%);
+}
+
+.striped a:hover {
+    color: white;
 }
 
 ul.fa-ul li a .fa-li {

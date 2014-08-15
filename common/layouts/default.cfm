@@ -81,17 +81,15 @@
                     </div>
                 </div>
 
-                <footer id="footer">
+                <footer id="footer" class="striped">
                     <div class="container">
                         <p>
                             <small>
                                 &copy; 2014 Christopher Bouchard. This work is
-                                licensed under a
-                                <a href="http://creativecommons.org/licenses/by/4.0/"
-                                        rel="license">
-                                    Creative Commons Attribution 4.0
-                                    International License
-                                </a>.
+                                licensed under a <a
+                                href="http://creativecommons.org/licenses/by/4.0/"
+                                rel="license">Creative Commons Attribution 4.0
+                                International License</a>.
                             </small>
                         </p>
                     </div>

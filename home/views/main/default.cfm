@@ -1,12 +1,7 @@
 <cfset local.contentHooks = getRCValue("contentHooks")>
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
-    <div class="logo logo-large">
-        <a href="/">
-            <img src="/assets/img/upliftinglemma_logo_white.svg">
-            Uplifting Lemma
-        </a>
-    </div>
+    <a class="logo logo-large" href="/">Uplifting Lemma</a>
     <p>An assortment of all sorts of projects that <em>sort of</em> work&hellip;</p>
 </cfsavecontent>
 
