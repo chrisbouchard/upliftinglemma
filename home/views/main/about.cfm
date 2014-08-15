@@ -2,6 +2,12 @@
 <cfset local.contentHooks.title = "About">
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
+    <div class="logo logo-small">
+        <a href="/">
+            <img src="/assets/img/upliftinglemma_logo_white.svg">
+            Uplifting Lemma
+        </a>
+    </div>
     <h1>About the Uplifting Lemma</h1>
     <p>Or, where have all the good domain names gone?</p>
 </cfsavecontent>

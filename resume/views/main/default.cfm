@@ -13,6 +13,12 @@
 </cfsavecontent>
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
+    <div class="logo logo-small">
+        <a href="/">
+            <img src="/assets/img/upliftinglemma_logo_white.svg">
+            Uplifting Lemma
+        </a>
+    </div>
     <img id="portrait" class="img-thumbnail hidden-xs hidden-print"
             alt="Photo of Chris Bouchard"
             src="/assets/img/portrait.png">

@@ -7,26 +7,32 @@ component extends="framework.one" output=false accessors=true {
     this.name = "UpliftingLemma";
 
     /* Set up ORM. */
+    /*
     this.ormenabled = true;
     this.ormsettings = {
         datasource = "upliftinglemma_orm",
         namingstrategy = "smart"
     };
+    */
 
     /* Set up FW/1. */
     variables.framework = {
         usingSubsystems = true,
         applicationKey = "UpliftingLemma",
-        generateSES = true,
-        SESOmitIndex = true,
         unhandledPaths = "/api,/assets,/flex2gateway",
+        reloadApplicationOnEveryRequest = true,
 
         diEngine = "di1",
         diLocations = "controllers,model",
 
         environments = {
+            prod = {
+                generateSES = true,
+                SESOmitIndex = true,
+            },
             dev = {
-                reloadApplicationOnEveryRequest = true
+                generateSES = false,
+                SESOmitIndex = false,
             }
         }
     }
@@ -73,6 +79,21 @@ component extends="framework.one" output=false accessors=true {
         rc.contentRenderer = contentRendererService;
         rc.contentHooks = {};
         rc.contentArgs = {};
+    }
+
+    function getEnvironment() output=false {
+        var hostname = cgi.SERVER_NAME;
+
+        switch (hostname) {
+        case "upliftinglemma.net":
+            return "prod";
+
+        case "upliftinglemma.dev":
+            return "dev";
+
+        default:
+            return "dev";
+        }
     }
 
 }

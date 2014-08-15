@@ -60,6 +60,7 @@
         </head>
 
         <body #local.content.controller#>
+            <!---
             #view("common:layout/navbar", {
                 items = [
                     { action = "home:main.about", label = "About" },
@@ -67,6 +68,7 @@
                     { action = "resume:main.default", label = "R&eacute;sum&eacute;" }
                 ]
             })#
+            --->
 
             <div id="wrapper">
                 <div id="content">
