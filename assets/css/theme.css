@@ -24,15 +24,16 @@ h1, h2, h3, h4, h5, h6, h5 {
 }
 
 .logo {
-    display: inline-block;
     color: white;
 }
 
 .logo-large {
+    display: block;
     font-size: 63px;
 }
 
 .logo-small {
+    display: inline-block;
     font-size: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
