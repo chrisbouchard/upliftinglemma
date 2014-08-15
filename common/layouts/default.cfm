@@ -47,7 +47,10 @@
 
             <!-- Local JavaScript -->
             <script src="/assets/js/upliftinglemma-app.js"></script>
+            <script src="/assets/js/anchor.js"></script>
             <script src="/assets/js/google.js"></script>
+            <script src="/assets/js/parma-stats.js"></script>
+
             <script>var CSRFToken = "#local.CSRFToken#";</script>
 
             <!-- Local Style -->
@@ -60,16 +63,6 @@
         </head>
 
         <body #local.content.controller#>
-            <!---
-            #view("common:layout/navbar", {
-                items = [
-                    { action = "home:main.about", label = "About" },
-                    { action = "fate:main.default", label = "Fate" },
-                    { action = "resume:main.default", label = "R&eacute;sum&eacute;" }
-                ]
-            })#
-            --->
-
             <div id="wrapper">
                 <div id="content">
                     #local.content.jumbotron#
@@ -83,15 +76,25 @@
 
                 <footer id="footer" class="striped">
                     <div class="container">
-                        <p>
-                            <small>
-                                &copy; 2014 Christopher Bouchard. This work is
-                                licensed under a <a
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <p class="pull-left">&copy; 2014 Christopher
+                                Bouchard. This work is licensed under a <a
                                 href="http://creativecommons.org/licenses/by/4.0/"
-                                rel="license">Creative Commons Attribution 4.0
-                                International License</a>.
-                            </small>
-                        </p>
+                                rel="license">Creative Commons Attribution
+                                License</a>.</p>
+                            </div>
+                            <div class="col-xs-2 text-right">
+                                <cfset local.parmaURL =
+                                        buildURL("home:main.about##about-parma")>
+                                <cfset local.endTime = GetTickCount()>
+                                <cfset local.duration =
+                                        local.endTime - rc.startTime>
+                                <x-parma><p><a href="#local.parmaURL#">Parma</a>
+                                dutifully built this page for you in about
+                                #local.duration# milliseconds.</p></x-parma>
+                            </div>
+                        </div>
                     </div>
                 </footer>
             </div>

@@ -79,6 +79,8 @@ component extends="framework.one" output=false accessors=true {
         rc.contentRenderer = contentRendererService;
         rc.contentHooks = {};
         rc.contentArgs = {};
+
+        rc.startTime = GetTickCount();
     }
 
     function getEnvironment() output=false {

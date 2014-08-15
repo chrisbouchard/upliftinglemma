@@ -1,6 +1,7 @@
 (function () {
     var UpliftingLemma = angular.module('UpliftingLemma', [
-        'UpliftingLemma.Google'
+        'UpliftingLemma.Anchor', 'UpliftingLemma.Google',
+        'UpliftingLemma.ParmaStats'
     ]);
 })();
 

@@ -27,7 +27,7 @@
         </cfoutput>
     </div>
     <div class="col-sm-10">
-        <p class="lead">Welcome to Uplifting Lemma!</p>
+        <h2>Welcome to Uplifting Lemma!</h2>
 
         <p>Augue at felis tincidunt sollicitudin. Fusce arcu. Duis a tortor.
         Duis et odio et leo sollicitudin consequat. Aliquam lobortis. Phasellus

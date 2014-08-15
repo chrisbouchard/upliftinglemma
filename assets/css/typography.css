@@ -39,8 +39,21 @@
 }
 
 @font-face {
+    src: url(../fonts/tngan.ttf);
+    font-family: "Tengwar Annatar";
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
     src: url(../fonts/upliftinglemma.woff);
     font-family: "Uplifting Lemma";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.tengwar {
+    font-family: "Tengwar Annatar";
 }
 
 .wiki-w {

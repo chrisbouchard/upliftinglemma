@@ -11,11 +11,10 @@
     <div class="panel panel-info">
         <div class="panel-heading">
             <h3 class="panel-title">
-                <i class="fa fa-info-circle"></i> lemma
+                <i class="fa fa-info-circle"></i> Definition
             </h3>
         </div>
         <div class="panel-body">
-            <h4>Noun</h4>
             <p><b>lem·ma</b> (plural <b>lem·mas</b> or <b>lem·ma·ta</b>)</p>
             <ol>
                 <li><i>(mathematics)</i> A proposition proved or accepted for
@@ -30,7 +29,8 @@
                 <li><i>(botany)</i> One of the specialized bracts around the
                 floret in grasses.</li>
             </ol>
-            <p>From <a href="http://en.wiktionary.org/wiki/lemma">Wiktionary: lemma</a></p>
+            <p>From <a class="wiki-w"
+            href="http://en.wiktionary.org/wiki/lemma">Wiktionary</a></p>
         </div>
     </div>
 </div>
@@ -60,7 +60,7 @@ neither of which seems familiar.
 
 
 
-<h2>About Me</h2>
+<h2 anchor="about-me">About Me</h2>
 
 <p>I&rsquo;m is a web developer, current working on my Ph.D. thesis in computer
 science. I&rsquo;ve been programming since I was 10 years old, when my dad
@@ -76,7 +76,7 @@ programming languages makes development quick and fun.</p>
 
 
 
-<h2>About This Site</h2>
+<h2 anchor="about-site">About This Site</h2>
 
 <p><span class="upliftinglemma">Uplifting Lemma</span> is, first and foremost,
 an experiment. It exists to play around with whatever frameworks and libraries
@@ -98,4 +98,14 @@ Libertine</a>, a free, open, and beautiful seriffed font. Writing papers in
 <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> has spoiled me for
 typesetting, but the kerning and OpenType features of Linux Libertine go a long
 way toward making browser text look good.
+
+
+
+<h2 anchor="about-parma">About The Server</h2>
+
+<p>This site was served for you today by <i>Parma</i>, an old Athlon server
+running Gentoo Linux. In Quenya (one of Tolkien&rsquo;s Elven languages), <span
+class="tengwar">qE6t#</span> (<i>parma</i>) means &ldquo;book&rdquo; and is
+the name of the Elven letter <span class="tengwar">q</span> representing the /p/
+sound. <i>Parma</i> the server works very hard and enjoys visitors.</p>
 

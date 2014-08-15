@@ -10,7 +10,7 @@ html, body {
 }
 
 #content {
-    padding: 0 0 75px 0;
+    padding: 0 0 100px 0;
 }
 
 #content-body {
@@ -22,9 +22,10 @@ html, body {
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 75px;
+    height: 100px;
     margin: 0;
-    padding: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #footer ul {
