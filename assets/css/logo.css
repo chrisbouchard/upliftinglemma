@@ -1,0 +1,65 @@
+.logo {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    color: hsl(250, 50%, 80%) !important;
+}
+
+.logo:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+.logo::before {
+    content: 'a';
+    display: block;
+    font-family: 'Uplifting Lemma';
+}
+
+.logo.logo-large {
+    font-size: 63px;
+}
+
+.logo.logo-large::before {
+    font-size: 110px;
+}
+
+.logo.logo-small {
+    font-size: 30px;
+}
+
+.logo.logo-small::before {
+    font-size: 45px;
+}
+
+@media(min-width: 768px) {
+    .logo {
+        text-align: left;
+    }
+
+    .logo::before {
+        display: inline-block;
+        position: relative;
+    }
+
+    .logo.logo-large {
+        margin-bottom: 0;
+    }
+
+    .logo.logo-large::before {
+        float: left;
+        top: -10px;
+        margin-right: 25px;
+    }
+
+    .logo.logo-small {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .logo.logo-small::before {
+        top: 13px;
+        margin-right: 15px;
+    }
+}
+

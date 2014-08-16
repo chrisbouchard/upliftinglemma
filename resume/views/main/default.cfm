@@ -13,14 +13,11 @@
 </cfsavecontent>
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
-    <a class="logo logo-small" href="/">Uplifting Lemma</a>
     <img id="portrait" class="img-thumbnail hidden-xs hidden-print"
             alt="Photo of Chris Bouchard"
             src="/assets/img/portrait.png">
-    <h1>
-        Christopher J. Bouchard<br>
-        <small>Web Application Developer</small>
-    </h1>
+    <h1>Christopher J. Bouchard</h1>
+    <p>Web Application Developer</p>
 </cfsavecontent>
 
 <div class="row">

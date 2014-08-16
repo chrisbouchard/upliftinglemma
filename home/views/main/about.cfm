@@ -2,7 +2,6 @@
 <cfset local.contentHooks.title = "About">
 
 <cfsavecontent variable="local.contentHooks.jumbotron">
-    <a class="logo logo-small" href="/">Uplifting Lemma</a>
     <h1>About the Uplifting Lemma</h1>
     <p>Or, where have all the good domain names gone?</p>
 </cfsavecontent>
@@ -45,9 +44,9 @@ the reader knows the proof of the theorem before even seeing it.</p>
 <p>Any researcher can tell you: most lemmas are <strong>not</strong> good
 lemmas.</p>
 
-<p>In a sea of bad lemmas, then, the <span class="upliftinglemma">Uplifting
-Lemma</span> is more than a stepping stone; it&rsquo;s a rock to cling to as
-the tide comes in. It&rsquo;s the fact that makes things click.</p>
+<p>In a sea of bad lemmas, then, the <em>Uplifting Lemma</em> is more than a
+stepping stone; it&rsquo;s a rock to cling to as the tide comes in. It&rsquo;s
+the fact that makes things click.</p>
 
 <p>When I registered the domain name, I was sure that the <em>lifting
 lemma</em> was something I&rsquo;d heard about &mdash; either in an abstract
@@ -78,10 +77,9 @@ programming languages makes development quick and fun.</p>
 
 <h2 anchor="about-site">About This Site</h2>
 
-<p><span class="upliftinglemma">Uplifting Lemma</span> is, first and foremost,
-an experiment. It exists to play around with whatever frameworks and libraries
-interest me. As I work on different web-based projects, I&rsquo;ll hook them
-off this site.</p>
+<p>Uplifting Lemma is, first and foremost, an experiment. It exists to play
+around with whatever frameworks and libraries interest me. As I work on
+different web-based projects, I&rsquo;ll hook them off this site.</p>
 
 <p>The site is built on the <a href="https://github.com/framework-one/fw1">FW/1
 framework</a>, running on <a href="http://www.getrailo.org/">Railo</a>.

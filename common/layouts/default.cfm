@@ -58,6 +58,7 @@
             <link rel="stylesheet" href="/assets/css/structure.css">
             <link rel="stylesheet" href="/assets/css/theme.css">
             <link rel="stylesheet" href="/assets/css/typography.css">
+            <link rel="stylesheet" href="/assets/css/logo.css">
 
             #local.content.head#
         </head>
