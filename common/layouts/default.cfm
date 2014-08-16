@@ -86,9 +86,12 @@
                                 <cfset local.endTime = GetTickCount()>
                                 <cfset local.duration =
                                         local.endTime - rc.startTime>
-                                <x-parma><p><a href="#local.parmaURL#">Parma</a>
-                                dutifully built this page for you in about
-                                #local.duration# milliseconds.</p></x-parma>
+                                <x-parma>
+                                    <p><a href="#local.parmaURL#">Parma</a>
+                                    dutifully built this page for you in about
+                                    #local.duration# milliseconds.
+                                    <i>Hantal&euml;.</i></p>
+                                </x-parma>
                             </div>
                         </div>
                     </div>

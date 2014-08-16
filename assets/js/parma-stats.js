@@ -6,19 +6,21 @@
             scope: {},
             restrict: 'E',
             transclude: true,
-            template: '<span class="tengwar parma-link" title="Click for info">Œqœ</span>',
+            template: '<span class="tengwar parma-link">Œqœ</span>',
             link: function (scope, element, attrs, controller, transclude) {
                 transclude(function (clone, scope) {
+                    var content = clone.map(function () {
+                        return $(this).html();
+                    }).get().join(' ');
+
                     $(element).popover({
                         container: 'body',
-                        content: $(clone).html(),
+                        content: content,
                         html: true,
-                        placement: 'left'
+                        placement: 'left',
+                        selector: '.parma-link',
+                        trigger: 'click hover'
                     });
-                });
-
-                $(element).click(function (event) {
-                    event.preventDefault();
                 });
             }
         };
