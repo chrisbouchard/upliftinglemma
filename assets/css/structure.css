@@ -47,6 +47,15 @@ html, body {
     margin-bottom: 8px !important;
 }
 
+.nav.nav-centered {
+    text-align: center;
+}
+
+.nav.nav-centered > li {
+    float: none !important;
+    display: inline-block !important;
+}
+
 .g-plus-profile img {
     float: right;
     height: 30px;

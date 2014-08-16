@@ -1,6 +1,6 @@
 component extends="framework.one" output=false accessors=true {
 
-    property contentRendererService;
+    property contentRenderer;
 
     /* Set up session management. */
     this.sessionManagement = true;
@@ -76,11 +76,19 @@ component extends="framework.one" output=false accessors=true {
     public void function before(required struct rc) output=false {
         /* Get ready to render some content! This allows views to attach
          * content to "hooks", which the layout can look for and render. */
-        rc.contentRenderer = contentRendererService;
+        rc.contentRenderer = contentRenderer;
         rc.contentHooks = {};
         rc.contentArgs = {};
 
-        rc.startTime = GetTickCount();
+        if (NOT StructKeyExists(rc, "startTime")) {
+            rc.startTime = GetTickCount();
+        }
+
+        /* No one should be requesting actions in the common subsystem. That's
+         * purely internal. */
+        if (getSubsystem() EQ "common") {
+            throw(message = "Unauthorized");
+        }
     }
 
     function getEnvironment() output=false {

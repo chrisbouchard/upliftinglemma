@@ -1,18 +1,15 @@
-<cfset local.contentHooks = getRCValue("contentHooks")>
+<cfset rc.contentHooks.title = "Christopher J. Bouchard">
+<cfset rc.contentHooks.app = "ResumeApp">
 
-<cfset local.contentHooks.title = "Christopher J. Bouchard">
-<cfset local.contentHooks.app = "ResumeApp">
-
-<cfsavecontent variable="local.contentHooks.head">
+<cfsavecontent variable="rc.contentHooks.head">
     <!-- Resume App -->
     <link rel="stylesheet" href="/assets/css/timeline.css">
     <script src="/assets/js/resume-app.js"></script>
-    <script src="/assets/js/anchor.js"></script>
     <script src="/assets/js/timeline.js"></script>
     <script src="/assets/js/toggle-hidden.js"></script>
 </cfsavecontent>
 
-<cfsavecontent variable="local.contentHooks.jumbotron">
+<cfsavecontent variable="rc.contentHooks.jumbotron">
     <img id="portrait" class="img-thumbnail hidden-xs hidden-print"
             alt="Photo of Chris Bouchard"
             src="/assets/img/portrait.png">

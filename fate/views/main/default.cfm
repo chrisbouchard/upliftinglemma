@@ -1,6 +1,4 @@
-<cfset local.contentHooks = getRCValue("contentHooks")>
-
-<cfsavecontent variable="local.contentHooks.jumbotron">
+<cfsavecontent variable="rc.contentHooks.jumbotron">
     <h1>FATE Character Database</h1>
     <p>Create and manage your FATE character sheets.<p>
 </cfsavecontent>

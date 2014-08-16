@@ -1,7 +1,6 @@
-<cfset local.contentHooks = getRCValue("contentHooks")>
-<cfset local.contentHooks.title = "About">
+<cfset rc.contentHooks.title = "About">
 
-<cfsavecontent variable="local.contentHooks.jumbotron">
+<cfsavecontent variable="rc.contentHooks.jumbotron">
     <h1>About the Uplifting Lemma</h1>
     <p>Or, where have all the good domain names gone?</p>
 </cfsavecontent>

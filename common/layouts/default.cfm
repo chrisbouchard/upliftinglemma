@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 
 <cfsilent>
-    <cfset local.CSRFToken = getRCValue("CSRFToken")>
-    <cfset local.contentRenderer = getRCValue("contentRenderer")>
-    <cfset local.contentHooks = getRCValue("contentHooks")>
-    <cfset local.contentArgs = getRCValue("contentArgs")>
-
-    <cfset local.content = local.contentRenderer.render(
+    <cfset local.content = rc.contentRenderer.render(
         hooks = ["app", "controller", "head", "jumbotron", "title"],
-        content = local.contentHooks,
-        args = local.contentArgs,
+        content = rc.contentHooks,
+        args = rc.contentArgs,
         defaults = {
             app = "UpliftingLemma"
         }
@@ -32,9 +27,9 @@
             <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
 
             <!-- Bootstrap -->
-            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-            <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
             <!-- FontAwesome-->
             <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -51,7 +46,7 @@
             <script src="/assets/js/google.js"></script>
             <script src="/assets/js/parma-stats.js"></script>
 
-            <script>var CSRFToken = "#local.CSRFToken#";</script>
+            <script>var CSRFToken = "#rc.CSRFToken#";</script>
 
             <!-- Local Style -->
             <link rel="stylesheet" href="/assets/css/print.css" media="print">
