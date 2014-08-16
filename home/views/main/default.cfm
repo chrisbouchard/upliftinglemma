@@ -21,6 +21,10 @@
             </div>
         </div>
         <div class="col-sm-10">
+            <pre><b>class</b> Functor f <b>where</b>
+    fmap :: (a -&gt; b) -&gt; f a -&gt; f b
+    <i>-- Bro, do you even lift?</i></pre>
+
             <h2>Welcome to Uplifting Lemma!</h2>
 
             <p>Augue at felis tincidunt sollicitudin. Fusce arcu. Duis a
