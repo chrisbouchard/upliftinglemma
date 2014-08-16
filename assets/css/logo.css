@@ -2,7 +2,7 @@
     display: block;
     margin-bottom: 40px;
     text-align: center;
-    color: hsl(250, 50%, 80%) !important;
+    color: white !important;
 }
 
 .logo:hover {
@@ -26,6 +26,7 @@
 
 .logo.logo-small {
     font-size: 30px;
+    color: hsl(250, 50%, 80%) !important;
 }
 
 .logo.logo-small::before {
