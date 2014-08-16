@@ -29,6 +29,11 @@
     color: hsl(250, 50%, 80%) !important;
 }
 
+.logo.logo-small:hover {
+    font-size: 30px;
+    color: white !important;
+}
+
 .logo.logo-small::before {
     font-size: 45px;
 }
