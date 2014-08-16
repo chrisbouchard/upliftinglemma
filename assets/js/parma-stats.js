@@ -6,7 +6,7 @@
             scope: {},
             restrict: 'E',
             transclude: true,
-            template: '<a class="tengwar parma-link" href="#" title="Click for info">Œqœ</a>',
+            template: '<span class="tengwar parma-link" title="Click for info">Œqœ</span>',
             link: function (scope, element, attrs, controller, transclude) {
                 transclude(function (clone, scope) {
                     $(element).popover({
