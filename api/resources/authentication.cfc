@@ -10,8 +10,8 @@ component extends="taffy.core.resource" taffy:uri="/authentication" {
     public function post() output=false {
         var code = form.code;
 
-        var clientID = googleClient.clientID,
-        var clientSecret = googleClient.clientSecret,
+        var clientID = googleClient.clientID;
+        var clientSecret = googleClient.clientSecret;
 
         var auth = signin.getGoogleAuth( rc.code,
                                          clientID,

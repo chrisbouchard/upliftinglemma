@@ -1,4 +1,5 @@
 .DS_Store
-WEB-INF/
+WEB-INF/.htaccess
+WEB-INF/railo
 api/model/services/googleClient.cfc
 
