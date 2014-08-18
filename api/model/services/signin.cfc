@@ -1,6 +1,6 @@
 component output=false accessors=true {
 
-    property utilService;
+    property util;
 
 
     public boolean function isSignedIn() output=false {
@@ -49,7 +49,7 @@ component output=false accessors=true {
                                        required string redirectURI
                                      )
     output=false {
-        var body = utilService.URLEncodedStruct({
+        var body = util.URLEncodedStruct({
             "code": code,
             "client_id": arguments.clientID,
             "client_secret": arguments.clientSecret,

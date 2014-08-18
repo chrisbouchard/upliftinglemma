@@ -1,12 +1,13 @@
 component output=false accessors=true {
 
     property CSRFGuardService;
+    property framework;
 
 
     public void function default( required struct rc ) output=false {
         /* No one should be requesting actions in the common subsystem. That's
          * purely internal. */
-        if (getSubsystem() EQ "common") {
+        if (framework.getSubsystem() EQ "common") {
             throw(message = "Unauthorized");
         }
 

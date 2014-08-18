@@ -4,18 +4,25 @@ component output=false accessors=true {
     output=false {
         var output = "";
         var key = "";
-        var first = true;
 
         for (key in obj) {
-            if (NOT first) {
+            if (Len(output) GT 0) {
                 output &= "&";
             }
 
-            first = false;
             output &= key & "=" & URLEncodedFormat(obj[key])
         }
 
         return output;
+    }
+
+
+    public string function StructGetValue( required struct obj,
+                                           required string key,
+                                           any defaultValue = null
+                                         )
+    output=false {
+        return StructKeyExists(obj, key) ? obj[key] : defaultValue;
     }
 
 }

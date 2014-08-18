@@ -1,4 +1,4 @@
 .DS_Store
 WEB-INF/
-home/model/services/googleClient.cfc
+api/model/services/googleClient.cfc
 

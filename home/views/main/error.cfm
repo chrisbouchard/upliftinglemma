@@ -1,6 +1,4 @@
-<cfset local.contentHooks = getRCValue("contentHooks")>
-
-<cfsavecontent variable="local.contentHooks.jumbotron">
+<cfsavecontent variable="rc.contentHooks.jumbotron">
     <h1>ERROR! <small>An error occurred!</small></h1>
 </cfsavecontent>
 

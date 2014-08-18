@@ -1,5 +1,6 @@
 component output=false accessors=true {
 
+    property util;
     property framework;
 
 
@@ -45,7 +46,7 @@ component output=false accessors=true {
 
 
     public string function renderApp( required string value,
-                                      struct args = {}
+                                      required struct args
                                     )
     output=false {
         if (Len(value) GT 0) {
@@ -57,7 +58,7 @@ component output=false accessors=true {
 
 
     public string function renderController( required string value,
-                                             struct args = {}
+                                             required struct args
                                            )
     output=false {
         if (Len(value) GT 0) {
@@ -69,17 +70,16 @@ component output=false accessors=true {
 
 
     public string function renderTitle( required string value,
-                                        struct args = {}
+                                        required struct args
                                       )
     output=false {
-        var output = ( StructKeyExists(args, "baseTitle") ?
-                       args.baseTitle : "Uplifting Lemma" );
+        var output = util.StructGetValue(args, "baseTitle", "Uplifting Lemma");
 
         if (Len(value) GT 0) {
-            output = "<title>#value# &bull; #output#</title>";
+            output = "#value# &bull; #output#";
         }
 
-        return output;
+        return "<title>#output#</title>";
     }
 
 }
