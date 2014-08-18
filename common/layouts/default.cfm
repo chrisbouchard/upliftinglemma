@@ -87,7 +87,8 @@
                                 <cfset local.duration =
                                         local.endTime - rc.startTime>
                                 <x-parma>
-                                    <p><a href="#local.parmaURL#">Parma</a>
+                                    <p><a
+                                    href="#local.parmaURL#"><i>Parma</i></a>
                                     dutifully built this page for you in about
                                     #local.duration# milliseconds.
                                     <i>Hantal&euml;.</i></p>

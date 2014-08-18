@@ -34,8 +34,20 @@ h1, h2, h3, h4, h5, h6, h5 {
     margin-bottom: 10px;
 }
 
-.parma-link:hover {
+.parma {
+    display: inline-block;
+}
+
+.parma-inner {
+    color: hsl(208, 50%, 70%);
+}
+
+.parma:hover {
     cursor: pointer;
+}
+
+.parma:hover .parma-inner {
+    color: white;
 }
 
 .upliftinglemma {

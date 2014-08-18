@@ -6,7 +6,7 @@
             scope: {},
             restrict: 'E',
             transclude: true,
-            template: '<span class="tengwar parma-link">Œqœ</span>',
+            template: '<div class="tengwar parma">Œ<span class="parma-inner">q</span>œ</div>',
             link: function (scope, element, attrs, controller, transclude) {
                 transclude(function (clone, scope) {
                     var content = clone.map(function () {
@@ -18,8 +18,8 @@
                         content: content,
                         html: true,
                         placement: 'left',
-                        selector: '.parma-link',
-                        trigger: 'click hover'
+                        selector: '.parma',
+                        trigger: 'click'
                     });
                 });
             }
