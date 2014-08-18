@@ -20,6 +20,8 @@
 
             <title>#local.content.title#</title>
 
+            <link rel="icon" href="/assets/img/favicon.png" />
+
             <!-- jQuery -->
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
