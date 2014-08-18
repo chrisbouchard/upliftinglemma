@@ -2,7 +2,9 @@
 
 <cfsilent>
     <cfset local.content = rc.contentRenderer.render(
-        hooks = ["app", "controller", "head", "jumbotron", "title"],
+        hooks = [
+            "app", "controller", "footer", "head", "jumbotron", "title"
+        ],
         content = rc.contentHooks,
         args = rc.contentArgs,
         defaults = {
@@ -18,7 +20,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <title>#local.content.title#</title>
+            #local.content.title#
 
             <link rel="icon" href="/assets/img/favicon.png" />
 
@@ -72,33 +74,7 @@
                     </div>
                 </div>
 
-                <footer id="footer" class="striped">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-10">
-                                <p class="pull-left">&copy; 2014 Christopher
-                                Bouchard. This work is licensed under a <a
-                                href="http://creativecommons.org/licenses/by/4.0/"
-                                rel="license">Creative Commons Attribution
-                                License</a>.</p>
-                            </div>
-                            <div class="col-xs-2 text-right">
-                                <cfset local.parmaURL =
-                                        buildURL("home:main.about##about-parma")>
-                                <cfset local.endTime = GetTickCount()>
-                                <cfset local.duration =
-                                        local.endTime - rc.startTime>
-                                <x-parma>
-                                    <p><a
-                                    href="#local.parmaURL#"><i>Parma</i></a>
-                                    dutifully built this page for you in about
-                                    #local.duration# milliseconds.
-                                    <i>Hantal&euml;.</i></p>
-                                </x-parma>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                #local.content.footer#
             </div>
         </body>
     </html>

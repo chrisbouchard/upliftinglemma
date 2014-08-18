@@ -70,7 +70,7 @@ component extends="framework.one" output=false accessors=true {
         }
 
         /* Check for cross-site request forgeries. */
-        this.controller("common:CSRFGuard.default");
+        this.controller("common:security.default");
     }
 
     public void function before(required struct rc) output=false {
@@ -82,12 +82,6 @@ component extends="framework.one" output=false accessors=true {
 
         if (NOT StructKeyExists(rc, "startTime")) {
             rc.startTime = GetTickCount();
-        }
-
-        /* No one should be requesting actions in the common subsystem. That's
-         * purely internal. */
-        if (getSubsystem() EQ "common") {
-            throw(message = "Unauthorized");
         }
     }
 

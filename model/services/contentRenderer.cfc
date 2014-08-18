@@ -12,9 +12,6 @@ component output=false accessors=true {
         var output = {};
 
         for (key in hooks) {
-            var defaultValue = ( StructKeyExists(defaults, key) ?
-                                 defaults[key] : "" );
-
             var value = "";
 
             /* Get the value from the content or defaults structs, in that
@@ -47,6 +44,30 @@ component output=false accessors=true {
     }
 
 
+    public string function renderApp( required string value,
+                                      struct args = {}
+                                    )
+    output=false {
+        if (Len(value) GT 0) {
+            return 'ng-app="#value#"';
+        }
+
+        return "";
+    }
+
+
+    public string function renderController( required string value,
+                                             struct args = {}
+                                           )
+    output=false {
+        if (Len(value) GT 0) {
+            return 'ng-controller="#value#"';
+        }
+
+        return "";
+    }
+
+
     public string function renderTitle( required string value,
                                         struct args = {}
                                       )
@@ -55,7 +76,7 @@ component output=false accessors=true {
                        args.baseTitle : "Uplifting Lemma" );
 
         if (Len(value) GT 0) {
-            output = "#value# &bull; #output#";
+            output = "<title>#value# &bull; #output#</title>";
         }
 
         return output;
